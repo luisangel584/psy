@@ -1,0 +1,28 @@
+.container{
+	padding-top: 30px;
+
+}
+body{
+	background-color: #81DAF5;
+}
+
+ol li a{
+	font-size: 20px;
+	text-decoration: none;
+	background-color: white;
+	display: inline;
+	border-radius: 6px 4px 6px 4px;
+}
+
+ol li a:hover {
+	text-decoration: none;
+    background-color: orange;
+}
+ol li a:link {
+	text-decoration: none;
+}
+footer{
+	padding-top: 50px;
+	text-align: center;
+
+}
