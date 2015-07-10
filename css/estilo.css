@@ -6,19 +6,20 @@ body{
 	background-color: #81DAF5;
 }
 
-ol li a{
+ul li a{
 	font-size: 20px;
 	text-decoration: none;
 	background-color: white;
 	display: inline;
 	border-radius: 6px 4px 6px 4px;
+	list-style: none;
 }
 
-ol li a:hover {
+ul li a:hover {
 	text-decoration: none;
     background-color: orange;
 }
-ol li a:link {
+ul li a:link {
 	text-decoration: none;
 }
 footer{
