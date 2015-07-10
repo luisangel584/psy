@@ -1,6 +1,139 @@
-body{
-    overflow-x: hidden;
+/*
+**
+**  Index
+**
+*/
+
+.index{
+    background: url('../img/stones3.jpg') no-repeat;
+    background-size: auto;
 }
+
+.index h1{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.index .login-card{
+    margin-top: 50px;
+    
+    border-radius: 5px;
+    border: 1px solid #34495E;
+    box-shadow: #34495E 1px 1px 20px 5px;
+ 
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.index .login-card hr{
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.index form a{
+    position: absolute;
+    bottom: 40px;
+    
+    text-decoration: none;
+}
+
+.index .btn-default, .index .btn-primary{
+    float: right;
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+
+.index .btn-default{
+    margin-right: 20px;
+}
+
+.index .reserve{
+    text-align: center;
+    
+    position: relative;
+    top: 100px;
+    
+    color: #337AB7;
+    text-shadow: #2C3E50 1px 1px 5px;
+    /*
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 3px;
+    
+    width: 300px;
+    height: 30px;
+    margin: 0 auto;
+    
+    box-shadow: #34495E 1px 1px 20px 5px;
+    */
+}
+
+
+/*
+**
+**  Registro
+**
+*/
+
+.registro{
+    background: url('../img/stones3.jpg') no-repeat;
+    background-size: auto;
+}
+
+.registro h1{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.registro .login-card{
+    margin-top: 50px;
+    
+    border-radius: 5px;
+    border: 1px solid #34495E;
+    box-shadow: #34495E 1px 1px 20px 5px;
+ 
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.registro .login-card hr{
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.registro .btn-default, .registro .btn-primary{
+    float: right;
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+
+.registro .btn-default{
+    margin-right: 20px;
+}
+
+.registro .reserve{
+    text-align: center;
+    
+    position: relative;
+    top: 100px;
+    
+    color: #337AB7;
+    text-shadow: #2C3E50 1px 1px 5px;
+    /*
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 3px;
+    
+    width: 300px;
+    height: 30px;
+    margin: 0 auto;
+    
+    box-shadow: #34495E 1px 1px 20px 5px;
+    */
+}
+
+
+/*
+**
+**  Resultados
+**
+*/
 
 .body h1{
     text-align: center;

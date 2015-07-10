@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="css/one.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular.min.js"></script>
+    <script src="formulario.js"></script>
+    
+</head>
+<body class="registro">
+    
+    <div class="container">
+       
+        <div class="row">
+           
+           <div class="col-md-2 col-xs-2"></div>
+           <div class="col-md-8 col-xs-8 login-card">
+               <h1>Registro de usuario</h1>
+               <hr>
+               
+               <div class="row">
+                   
+                   <div class="col-md-1 col-xs-1"></div>
+                   <div class="col-md-10 col-xs-10">
+                      
+                      <p>Por favor, llena el siguiente formulario a fin de obtener los datos necesarios para registrarte en el sitema.</p>
+                       
+                     <form role="form">
+                     
+                     <!-- Terminan datos generales -->
+                     
+                     <div class="form-group">
+                         <label for="form-name">Nombre(s)</label>
+                         <div class="input-group">
+                             <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+                             <input type="text" id="form-name" class="form-control" placeholder="Nombre(s)">
+                         </div>
+                         
+                     </div>
+                     
+                     <div class="row">
+                         
+                         <div class="col-md-6">
+                             
+                             <div class="form-group">
+                               <label for="form-paterno">Apellido Paterno</label>
+                               <div class="input-group">
+                                  <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+                                  <input type="text" id="form-paterno" class="form-control" placeholder="Apellido paterno">
+                               </div>
+                           </div>
+                             
+                         </div>
+                         <div class="col-md-6">
+                             
+                             <div class="form-group">
+                               <label for="form-materno">Apellido Materno</label>
+                               <div class="input-group">
+                                   <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+                                   <input type="text" id="form-materno" class="form-control" placeholder="Apellido materno">
+                               </div>
+                           </div>
+                             
+                         </div>
+                         
+                     </div>
+                      
+                      <div class="row">
+                          <div class="col-md-12">
+                              <label>Fecha de nacimiento</label>
+                          </div>
+                      </div>
+                       
+                       <div class="row">
+                           
+                           <div class="col-md-4">
+                               
+                               <div class="form-group">
+                                   <div class="input-group">
+                                      <div class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></div>
+                                       <input type="number" id="form-dia" class="form-control" placeholder="DD" min="1" max="31" maxlength="2">
+                                   </div>
+                               </div>
+                               
+                           </div>
+                           <div class="col-md-4">
+                               
+                               <div class="form-group">
+                                   <div class="input-group">
+                                      <div class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></div>
+                                       <input type="number" id="form-mes" class="form-control" placeholder="MM" min="1" max="12" maxlength="2">
+                                   </div>
+                               </div>
+                               
+                           </div>
+                           <div class="col-md-4">
+                               
+                               <div class="form-group">
+                                   <div class="input-group">
+                                      <div class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></div>
+                                       <input type="number" id="form-anio" class="form-control" placeholder="AAAA" min="1950" max="2015" maxlength="4">
+                                   </div>
+                               </div>
+                               
+                           </div>
+                           
+                       </div>
+                       
+                       <div class="row">
+                           
+                           <div class="col-md-6">
+                               
+                               <div class="form-group">
+                                   <label for="form-telefono">Teléfono</label>
+                                   <div class="input-group">
+                                       <div class="input-group-addon"><span class="glyphicon glyphicon-earphone"></span></div>
+                                       <input type="number" id="form-telefono" class="form-control" placeholder="Teléfono" maxlength="10">
+                                   </div>
+                               </div>
+                               
+                           </div>
+                           <div class="col-md-6">
+                               
+                               <div class="form-group">
+                                   <label for="form-email">E-mail</label>
+                                   <div class="input-group">
+                                       <div class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></div>
+                                       <input type="email" id="form-email" class="form-control" placeholder="E-mail">
+                                   </div>
+                               </div>
+                               
+                           </div>
+                           
+                       </div>
+                       
+                       <!-- Terminan datos generales -->
+                       <hr>
+                       <!-- Empiezan datos de nivel de estudios -->
+                       
+                       <div class="form-group">
+                           <label for="form-nivel">Nivel de estudios</label>
+                           <div class="input-group">
+                               <div class="input-group-addon"><span class="glyphicon glyphicon-education"></span></div>
+                               <input type="text" id="form-nivel" class="form-control" placeholder="Nivel de estudios">
+                           </div>
+                       </div>
+                       
+                       <!-- Terminan datos de nivel de estudios -->
+                       <hr>
+                       <!-- Empiezan datos de trabajo solicitado -->
+                       
+                       <div class="form-group">
+                           <label for="form-solicita">Puesto que solicita</label>
+                           <div class="input-group">
+                               <div class="input-group-addon"><span class="glyphicon glyphicon-briefcase"></span></div>
+                               <input type="text" id="form-solicita" class="form-control" placeholder="Puesto solicitado">
+                           </div>
+                       </div>
+                       
+                       <!-- Terminan datos de trabajo solicitado -->
+                       <br>
+
+                       <button class="btn btn-primary">Registrar</button>
+                        <button class="btn btn-default">Cancelar</button>
+
+                   </form>  
+                       
+                   </div>
+                   <div class="col-md-1 col-xs-1"></div>
+                   
+               </div>
+               
+           </div>
+           <div class="col-md-2 col-xs-2"></div>
+            
+        </div>
+        
+        <div class="reserve">
+            <small>
+            <p>2015 - Todos los derechos reservados</p>
+        </small>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
