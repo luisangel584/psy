@@ -1,5 +1,11 @@
+body{
+ background: url('../img/stones3.jpg') no-repeat;
+    
+	}
+
 .titu{
 text-align:center;
+text-shadow: 2px 2px #FFFFFF;
 color:crimson;
 
 }
@@ -8,4 +14,8 @@ color:white;
 border-radius:1em;
 background-color:DodgerBlue;
 }
-
+label.radio-inline{
+color:white;
+border-radius:1em;
+background-color:GoldenRod;
+}
