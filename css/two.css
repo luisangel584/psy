@@ -5,17 +5,12 @@ body{
 
 .titu{
 text-align:center;
-text-shadow: 2px 2px #FFFFFF;
-color:crimson;
 
 }
 .pregu {
-color:white;
-border-radius:1em;
-background-color:DodgerBlue;
+
 }
 label.radio-inline{
-color:white;
-border-radius:1em;
-background-color:GoldenRod;
 }
+
+.container {    background: rgba(255, 255, 255, 0.9);}
