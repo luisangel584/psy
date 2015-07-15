@@ -8,9 +8,29 @@ text-align:center;
 
 }
 .pregu {
+text-align:center;
 
 }
 label.radio-inline{
+
 }
 
-.container {    background: rgba(255, 255, 255, 0.9);}
+.container {  
+position:relative;
+top:5em;
+border-radius: 5px;
+border: 1px solid #34495E;
+padding-top: 30px;
+background: rgba(255, 255, 255, 0.9);
+
+}
+
+.reserve{
+text-shadow: 1px 1px #000000;
+color:GoldenRod ;
+position:relative;
+bottom:-5em;
+	padding-top: 30px;
+	text-align: center;
+
+}
