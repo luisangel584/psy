@@ -1,84 +1,163 @@
-<!Doctype html>
-<html>
+<!DOCTYPE html>
+<html ng-app="myApp" >
+
 <head>
 <meta charset="UTF-8">
-<title>preguntas</title>
 <link rel="stylesheet" type="text/css" href="css/two.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
+  <title>pregunta para entrar a opciones</title>
+  
 </head>
-	<body>
-		<div class="container">
-		<div class="row"><!--primer row que tiene el titulo-->
+
+<body>
+ 
+<div class="container">
+  <div ng-controller="WizardController">
+
+    <script id="wizard.html" type="text/ng-template">
+      <div class="wizard">
+	  <div class="row"><!--primer row que tiene el titulo-->
 			<div class="col-md-2 col-xs-2"></div>
 			<div class="col-md-8 col-xs-8">
-               <h1 class="titu">Cuestionario de prueba para entrar a opciones</h1>
-				</div>
-		
-		
-		</div>
-	
-		<div class="row"><!--segundo row que tiene preguntas-->
-	         	<div class="col-md-4 col-xs-1"></div>
-			<div class="col-md-6 col-xs-10">
-              <form>
-		<label class="pregu">¿quién es el miembro de este equipo mas guapo?: </label>
-		<br>
-		<label class="radio-inline">
-		<input type="radio" name="inlineRadio" id="inlineRadio1" value="Cristhian"> Cristhian
-		</label>
-		<label class="radio-inline">
-		<input type="radio" name="inlineRadio" id="inlineRadio2" value="Luis"> Luis
-		</label>
-		<label class="radio-inline">
-		<input type="radio" name="inlineRadio" id="inlineRadio3" value="Maik"> Maik
-		</label>
-		<label class="radio-inline">
-		<input type="radio" name="inlineRadio" id="inlineRadio2" value="Jordan"> Jordan
-		</label>
-		<label class="radio-inline">
-		<input type="radio" name="inlineRadio" id="inlineRadio2" value="Guemez"> Guemez
-		</label>
-		<br>
-		
-			
-		</form>
 
-				</div>
-		
-		
-		
+        <h1 class="titu">Preguntas para entrar a opciones</h1>
+		</div>	
 
+        <div ng-transclude></div>
+		
 			<div class="row"><!--tercer row que tiene el boton de cambiar de pagina-->
-			<div class="col-md-5 col-xs-3"></div>
-			<div class="col-md-4 col-xs-9">
+			<div class="col-md-4 col-xs-3"></div>
+			<div class="col-md-6 col-xs-8">
+
+        <div class="btn btn-default">
+          <a class="boton1"ng-click="showPreviousStep()" ng-show="hasPrevious()">Anterior</a>
+	
+          
+		  
+        </div>
 		
-			<br>
-			<br>
-             <a href="#" class="btn btn-default" role="button">Siguiente</a>
-			
-			<a href="#" class="btn btn-default" role="button">Anterior</a>
-			
-			
-				
-				</div>
-		
-		
+        <div class="btn btn-default">
+		<a class="boton2"ng-click="showNextStep()" ng-show="hasNext()">Siguiente</a>
+		 
+        </div>
 		</div>
+
+
+      </div>
+    </script>
+<div class="row"><!--segundo row que tiene preguntas-->
+	         	
+    <wizard on-before-step-change="log(event)" on-step-changing="log(event)" on-after-step-change="log(event)">
+<div class="col-md-4 col-xs-1"></div>
+			<div class="col-md-6 col-xs-10">
+      <step title="Pregunta 1">
+        <strong>quien es el mas guapo:</strong> 
+        </br>
+        <label>
+        <input type="radio" ng-model="user.pregu1" value="guemez">
+         guemez  </label><br/>
+  <label>
+    <input type="radio" ng-model="user.pregu1" value="luis">
+    luis  </label><br/>
+  <label>
+    <input type="radio" ng-model="user.pregu1" value="maik">
+    Maik  </label><br/>
+  <label>
+    <input type="radio" ng-model="user.pregu1" value="jordan">
+ jordan  </label><br/>
+      </step>
+
+      <step title="pregunta 2">
+        <strong>ejemplo pregunta 2:</strong> 
+        </br>
+        <label>
+        <input type="radio" ng-model="user.pregu2" value="guemez">
+         guemez  </label><br/>
+  <label>
+    <input type="radio" ng-model="user.pregu2" value="Luis">
+    luis  </label><br/>
+  <label>
+    <input type="radio" ng-model="user.pregu2" value="Maik">
+    Maik  </label><br/>
+  <label>
+    <input type="radio" ng-model="user.pregu2" value="jordan">
+ jordan  </label><br/>
+      </step>
+
+      <step title="pregunta 3">
+        <strong>ejemplo pregunta 3:</strong> 
+        </br>
+        <input type="radio" ng-model="user.pregu3" value="guemez">
+         guemez
+  </label><br/>
+  <label>
+    <input type="radio" ng-model="user.pregu3" value="luis">
+    luis  </label><br/>
+  <label>
+    <input type="radio" ng-model="user.pregu3" value="maik">
+    Maik  </label><br/>
+  <label>
+    <input type="radio" ng-model="user.pregu3" value="jordan">
+ jordan  </label><br/>
+      </step>
+
+      <step title="pregunta 4">
+        <strong>ejemplo pregunta 4:</strong> 
+        </br>
+        <input type="radio" ng-model="user.pregu4" value="guemez">
+         guemez
+  </label><br/>
+  <label>
+    <input type="radio" ng-model="user.pregu4" value="luis">
+    luis  </label><br/>
+  <label>
+    <input type="radio" ng-model="user.pregu4" value="maik">
+    Maik  </label><br/>
+  <label>
+    <input type="radio" ng-model="user.pregu4" value="jordan">
+ jordan  </label><br/>
+      </step>
+      <br/>
+		<step title="pregunta 5">
         
-
-		</div>
-
-
-<div class="reserve">
+        <strong>ejemplo pregunta 5:</strong> 
+        <br/>
+           <input type="radio" ng-model="user.pregu5" value="1">
+           1
+  </label><br/>
+  <label>
+    <input type="radio" ng-model="user.pregu5" value="2">
+    2  </label><br/>
+  <label>
+    <input type="radio" ng-model="user.pregu5" value="3">
+    3  </label><br/>
+      </step>
+      </div>
+      <step title="Respuestas">
+        <strong>Pregunta 1:</strong> {{user.pregu1}}
+        <br>
+        <strong>Pregunta 2:</strong> {{user.pregu2}}
+        <br>
+        <strong>Pregunta 3:</strong> {{user.pregu3}}
+        <br>
+        <strong>Pregunta 4:</strong> {{user.pregu4}}
+        <br>
+        <strong>Pregunta 5:</strong> {{user.pregu5}}
+        <br>
+      </step>
+    </wizard>
+  </div>
+  
+  <div class="reserve">
                     <small>
                         <p>2015 - Todos los derechos reservados</p>
-                    </small>
+                    </small>                </div>
                 </div>
-                </div>
-		
-
-		</body>
+</div>
 
 
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
 </html>
+		
