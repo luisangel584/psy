@@ -274,3 +274,22 @@ bottom:-5em;
     height: 10%;
     margin: 0 auto;
     }
+
+#datepicker{
+    float: right;
+    padding-right: 30px;
+    padding-top: 50px;
+}
+
+h4{
+    color: #F03030;
+    text-align: center;
+}
+.parrafo{
+    color: #5D0910;
+}
+.moti{
+    background-color: #D6F2F2;
+    border-radius: 5px 5px; 
+    text-shadow: #2C3E50 1px 1px 5px;
+}
