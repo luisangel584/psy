@@ -222,7 +222,7 @@ bottom:-5em;
     background-size: auto;
 }
 
-.home h1{
+.home h1,h3{
     text-align: center;
     padding-top: 20px;
 }
