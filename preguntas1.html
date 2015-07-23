@@ -17,7 +17,7 @@
     <script id="wizard.html" type="text/ng-template">
       <div class="wizard">
 	  <div class="row"><!--primer row que tiene el titulo-->
-			<div class="col-md-2 col-xs-2"></div>
+			<div class="col-md-2 col-xs-2"> </div>
 			<div class="col-md-8 col-xs-8">
 
         <h1 class="titu">Preguntas para entrar a opciones</h1>
@@ -26,7 +26,7 @@
         <div ng-transclude></div>
 		
 			<div class="row"><!--tercer row que tiene el boton de cambiar de pagina-->
-			<div class="col-md-4 col-xs-3"></div>
+			<div class="col-md-5 col-xs-3"></div>
 			<div class="col-md-6 col-xs-8">
 
         
@@ -46,8 +46,8 @@
 <div class="row"><!--segundo row que tiene preguntas-->
 	         	
     <wizard on-before-step-change="log(event)" on-step-changing="log(event)" on-after-step-change="log(event)">
-<div class="col-md-4 col-xs-4"></div>
-			<div class="col-md-6 col-xs-6">
+<div class="col-md-5 col-xs-3"></div>
+			<div class="col-md-7 col-xs-8">
       <step title="Pregunta 1">
         <strong>quien es el mas guapo:</strong> 
         </br>
@@ -131,7 +131,10 @@
     3  </label><br/>
       </step>
       </div>
+	  <div class="col-md-5 col-xs-4"></div>
+			<div class="col-md-6 col-xs-6">
       <step title="Respuestas">
+	  
         <strong>Pregunta 1:</strong> {{user.pregu1}}
         <br>
         <strong>Pregunta 2:</strong> {{user.pregu2}}
@@ -145,6 +148,7 @@
       </step>
     </wizard>
   </div>
+  </div>
   
   <div class="reserve">
                     <small>
@@ -154,7 +158,7 @@
 </div>
 
 
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
