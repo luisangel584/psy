@@ -29,17 +29,15 @@
 			<div class="col-md-4 col-xs-3"></div>
 			<div class="col-md-6 col-xs-8">
 
-        <div class="btn btn-default">
-          <a class="boton1"ng-click="showPreviousStep()" ng-show="hasPrevious()">Anterior</a>
-	
-          
+        
+          <div class="buttons">
+          <a class="btn btn-default" ng-click="showPreviousStep()" ng-show="hasPrevious()">Anterior</a>
+          <a class="btn btn-default" ng-click="showNextStep()" ng-show="hasNext()">Siguiente</a>
+        </div>
 		  
         </div>
 		
-        <div class="btn btn-default">
-		<a class="boton2"ng-click="showNextStep()" ng-show="hasNext()">Siguiente</a>
-		 
-        </div>
+        
 		</div>
 
 
@@ -48,8 +46,8 @@
 <div class="row"><!--segundo row que tiene preguntas-->
 	         	
     <wizard on-before-step-change="log(event)" on-step-changing="log(event)" on-after-step-change="log(event)">
-<div class="col-md-4 col-xs-1"></div>
-			<div class="col-md-6 col-xs-10">
+<div class="col-md-4 col-xs-4"></div>
+			<div class="col-md-6 col-xs-6">
       <step title="Pregunta 1">
         <strong>quien es el mas guapo:</strong> 
         </br>
