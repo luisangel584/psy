@@ -26,32 +26,32 @@
                    <div class="col-md-1 col-xs-1"></div>
                    <div class="col-md-10 col-xs-10">
                        
-                     <form role="form">
-                   
+                     <form role="form" name="forma">
+
                        <div class="form-group">
-                           <label for="form-user">Nombre de usuario</label>
-                           <div class="input-group">
+                           <label>Nombre de usuario</label>
+                           <div class="input-group" ng-class="{'has-error': forma.nombreU.$invalid, 'has-success': forma.nombreU.$valid}">
                               <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
-                              <input type="text" class="form-control" placeholder="Escriba nombre de usuario">
+                              <input type="text" class="form-control" name="nombreU" placeholder="Escriba nombre de usuario" required>
                            </div>
                        </div>
 
                        <div class="form-group">
-                           <label for="form-pwd">Contraseña:</label>
-                           <div class="input-group">
+                           <label>Contraseña:</label>
+                           <div class="input-group" ng-class="{'has-error': forma.passU.$invalid, 'has-success': forma.passU.$valid}">
                               <div class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></div>
-                               <input type="password" class="form-control" placeholder="Escriba su contraseña">
+                               <input type="password" class="form-control" name="passU" placeholder="Escriba su contraseña" required>
                            </div>
 
                        </div>
-                       
-                       
-                       <button class="btn btn-primary" onclick="window.location.href='home.html'">Ingresar</button>
+
+
+                       <button class="btn btn-primary" ng-disabled="forma.$invalid">Ingresar</button>
                         <button class="btn btn-default">Limpiar</button>
-                        
+
                         <a id="register" href="registro.html">No tengo una cuenta</a>
 
-                   </form>  
+                   </form>
                        
                    </div>
                    <div class="col-md-1 col-xs-1"></div>
