@@ -57,9 +57,10 @@
     <wizard on-before-step-change="log(event)" on-step-changing="log(event)" on-after-step-change="log(event)">
 <div class="col-md-5 col-xs-3"></div>
         <div class="col-md-7 col-xs-8">
-      <step title="Pregunta 1">
-        <strong>quien es el mas guapo:</strong>
-        </br>
+     <step>
+        <h4><strong>pregunta 1:</strong></h4>
+        <p>quien es el mas guapo:</p>
+        
         <label>
         <input type="radio" ng-model="user.pregu1" value="guemez">
          guemez  </label><br/>
@@ -74,9 +75,10 @@
  jordan  </label><br/>
       </step>
 
-      <step title="pregunta 2">
-        <strong>ejemplo pregunta 2:</strong>
-        </br>
+      <step>
+        <h4><strong>pregunta 2:</strong></h4>
+        <p>quien es el mas guapo:</p>
+        
         <label>
         <input type="radio" ng-model="user.pregu2" value="guemez">
          guemez  </label><br/>
@@ -91,9 +93,10 @@
  jordan  </label><br/>
       </step>
 
-      <step title="pregunta 3">
-        <strong>ejemplo pregunta 3:</strong>
-        </br>
+      <step>
+        <h4><strong>pregunta 3:</strong></h4>
+        <p>quien es el mas guapo:</p>
+        
         <input type="radio" ng-model="user.pregu3" value="guemez">
          guemez
   </label><br/>
@@ -108,9 +111,10 @@
  jordan  </label><br/>
       </step>
 
-      <step title="pregunta 4">
-        <strong>ejemplo pregunta 4:</strong>
-        </br>
+      <step>
+         <h4><strong>pregunta 4:</strong></h4>
+        <p>quien es el mas guapo:</p>
+        
         <input type="radio" ng-model="user.pregu4" value="guemez">
          guemez
   </label><br/>
@@ -125,10 +129,11 @@
  jordan  </label><br/>
       </step>
       <br/>
-		<step title="pregunta 5">
+		<step>
 
-        <strong>ejemplo pregunta 5:</strong>
-        <br/>
+         <h4><strong>pregunta 5:</strong></h4>
+        <p>quien es el mas guapo:</p>
+        
            <input type="radio" ng-model="user.pregu5" value="1">
            1
   </label><br/>
@@ -139,6 +144,22 @@
     <input type="radio" ng-model="user.pregu5" value="3">
     3  </label><br/>
       </step>
+      <step >
+
+         <h4><strong>pregunta 6:</strong></h4>
+        <p>quien es el mas guapo:</p>
+    
+           <input type="radio" ng-model="user.pregu6" value="1">
+           1
+  </label><br/>
+  <label>
+    <input type="radio" ng-model="user.pregu6" value="2">
+    2  </label><br/>
+  <label>
+    <input type="radio" ng-model="user.pregu6" value="3">
+    3  </label><br/>
+      </step>
+      
       </div>
 	  <div class="col-md-5 col-xs-4"></div>
 			<div class="col-md-6 col-xs-6">
@@ -153,6 +174,8 @@
         <strong>Pregunta 4:</strong> {{user.pregu4}}
         <br>
         <strong>Pregunta 5:</strong> {{user.pregu5}}
+        <br>
+        <strong>Pregunta 6:</strong> {{user.pregu6}}
         <br>
       </step>
     </wizard>
