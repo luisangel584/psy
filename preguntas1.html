@@ -15,41 +15,50 @@
   <div ng-controller="WizardController">
 
     <script id="wizard.html" type="text/ng-template">
-      <div class="wizard">
-	  <div class="row"><!--primer row que tiene el titulo-->
-			<div class="col-md-2 col-xs-2"> </div>
-			<div class="col-md-8 col-xs-8">
+        <row>
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
 
-        <h1 class="titu">Preguntas para entrar a opciones</h1>
-		</div>	
+                <div class="wizard">
+                    <div class="row"><!--primer row que tiene el titulo-->
+                        <div class="col-md-2 col-xs-2"> </div>
+                        <div class="col-md-8 col-xs-8">
 
-        <div ng-transclude></div>
-		
-			<div class="row"><!--tercer row que tiene el boton de cambiar de pagina-->
-			<div class="col-md-5 col-xs-3"></div>
-			<div class="col-md-6 col-xs-8">
+                            <h1 class="titu">Preguntas para entrar a opciones</h1>
+                        </div>
 
-        
-          <div class="buttons">
-          <a class="btn btn-default" ng-click="showPreviousStep()" ng-show="hasPrevious()">Anterior</a>
-          <a class="btn btn-default" ng-click="showNextStep()" ng-show="hasNext()">Siguiente</a>
-        </div>
-		  
-        </div>
-		
-        
-		</div>
+                        <div ng-transclude></div>
+
+                        <div class="row"><!--tercer row que tiene el boton de cambiar de pagina-->
+                            <div class="col-md-5 col-xs-3"></div>
+                            <div class="col-md-6 col-xs-8">
 
 
-      </div>
+                                <div class="buttons">
+                                    <a class="btn btn-default" ng-click="showPreviousStep()" ng-show="hasPrevious()">Anterior</a>
+                                    <a class="btn btn-default" ng-click="showNextStep()" ng-show="hasNext()">Siguiente</a>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-2"></div>
+        </row>
+
     </script>
 <div class="row"><!--segundo row que tiene preguntas-->
 	         	
     <wizard on-before-step-change="log(event)" on-step-changing="log(event)" on-after-step-change="log(event)">
 <div class="col-md-5 col-xs-3"></div>
-			<div class="col-md-7 col-xs-8">
+        <div class="col-md-7 col-xs-8">
       <step title="Pregunta 1">
-        <strong>quien es el mas guapo:</strong> 
+        <strong>quien es el mas guapo:</strong>
         </br>
         <label>
         <input type="radio" ng-model="user.pregu1" value="guemez">
@@ -66,7 +75,7 @@
       </step>
 
       <step title="pregunta 2">
-        <strong>ejemplo pregunta 2:</strong> 
+        <strong>ejemplo pregunta 2:</strong>
         </br>
         <label>
         <input type="radio" ng-model="user.pregu2" value="guemez">
@@ -83,7 +92,7 @@
       </step>
 
       <step title="pregunta 3">
-        <strong>ejemplo pregunta 3:</strong> 
+        <strong>ejemplo pregunta 3:</strong>
         </br>
         <input type="radio" ng-model="user.pregu3" value="guemez">
          guemez
@@ -100,7 +109,7 @@
       </step>
 
       <step title="pregunta 4">
-        <strong>ejemplo pregunta 4:</strong> 
+        <strong>ejemplo pregunta 4:</strong>
         </br>
         <input type="radio" ng-model="user.pregu4" value="guemez">
          guemez
@@ -117,8 +126,8 @@
       </step>
       <br/>
 		<step title="pregunta 5">
-        
-        <strong>ejemplo pregunta 5:</strong> 
+
+        <strong>ejemplo pregunta 5:</strong>
         <br/>
            <input type="radio" ng-model="user.pregu5" value="1">
            1
@@ -134,7 +143,7 @@
 	  <div class="col-md-5 col-xs-4"></div>
 			<div class="col-md-6 col-xs-6">
       <step title="Respuestas">
-	  
+
         <strong>Pregunta 1:</strong> {{user.pregu1}}
         <br>
         <strong>Pregunta 2:</strong> {{user.pregu2}}

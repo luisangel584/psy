@@ -3,6 +3,8 @@ body{
     
 	}
 
+
+
 .titu{
 text-align:center;
 
@@ -15,7 +17,7 @@ label.radio-inline{
 
 }
 
-.container {  
+.wizard {
 position:relative;
 top:5em;
 border-radius: 5px;
