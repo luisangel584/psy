@@ -151,24 +151,23 @@ a, a:hover{
 
 
 body{
-    border-left: 1px solid #ddd;
-    border-right: 1px solid #ddd;
+
     background: url('../img/stones3.jpg') no-repeat;
-    padding-left: 10em;
-    padding-right: 10em;
-    padding-bottom: 5em;
+
 }
 
-.container2
+.resultado-panel {
+    position:relative;
+    top:5em;
+    border-radius: 5px;
+    border: 1px solid #34495E;
+    padding-top: 30px;
+    background: rgba(255, 255, 255, 0.9);
 
-{
-position:relative;
-top:5em;
-border-radius: 5px;
-border: 1px solid #34495E;
-padding-top: 30px;
-background: rgba(255, 255, 255, 0.9);
+}
 
+.resultado-panel h1{
+    text-align: center;
 }
 
 .option-card{
