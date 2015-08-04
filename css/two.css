@@ -1,33 +1,118 @@
+
+
+/*            Navigation menu                */
+.nav-pills > li + li {
+    margin-left: 0;
+}
+.nav-pills > li > a {
+    border: 1px solid #2CA8FF;
+    border-radius: 0;
+    color: #2CA8FF;
+    margin-left: -1px;
+}
+
+
+
+/*      Here the code for the wizard           */
+
+label{
+    font-weight: 400;
+}
+
+
+.wizard-container{
+   
+    padding-top: 100px;
+    z-index: 3;
+}
+.wizard-card{
+    min-height: 410px;
+    
+    padding: 10px 0;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+}
+
+.wizard-card .tab-content{
+    min-height: 340px;
+    padding: 20px 10px;
+}
+
+.wizard-card .wizard-footer{
+    padding: 0 10px;
+}
+
+.wizard-card .disabled{
+    display: none;
+}
+
+.wizard-card .wizard-header h3{
+    font-weight: 200;
+    text-align: center;
+}
+.wizard-card > ul > li{
+    text-align: center;
+}
+.wizard-card > ul > li a {
+    border: 0 !important;
+    background-color: #999999;
+    color: #FFFFFF !important;
+    font-size: 12px;
+}
+
+
+
+
+/*            ghnjk                */
+
+/*cuestionario*/
 body{
  background: url('../img/stones3.jpg') no-repeat;
     
 	}
 
 
-
-.titu{
-text-align:center;
-
-}
-.pregu {
-text-align:center;
-
-}
-label.radio-inline{
-
-}
-
-.wizard {
+.cuestionario{
 position:relative;
 top:5em;
-border-radius: 5px;
-border: 1px solid #34495E;
+box-shadow: 0 0 15px rgba(0, 0, 0, 0.15), 0 0 1px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+
 padding-top: 30px;
 background: rgba(255, 255, 255, 0.9);
 
 }
 
-.reserve{
+.preguntas-logo-izquierdo{
+width:162px;
+height:85px;
+
+}
+.preguntas-cuestionario{
+
+background: rgba(255, 255, 255, 0.6);
+
+}
+
+.preguntas-logo-derecho{
+margin-left:-22px;
+width:162px;
+height:85px;
+
+
+}
+.preguntas{
+
+text-align:center;
+
+}
+.cuestionario{
+
+margin-left: 79px;
+
+}
+
+.reserve3{
 text-shadow: 1px 1px #000000;
 color:GoldenRod ;
 position:relative;
