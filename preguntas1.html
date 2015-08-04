@@ -1,197 +1,394 @@
 <!DOCTYPE html>
-<html ng-app="myApp" >
+<html >
 
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="css/two.css">
+<link rel="stylesheet" type="text/css" href="css/one.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <title>pregunta para entrar a opciones</title>
   
 </head>
 
-<body>
+<body class="preguntas1body" >
  
-<div class="container">
-  <div ng-controller="WizardController">
-
-    <script id="wizard.html" type="text/ng-template">
-        <row>
-            <div class="col-md-2"></div>
-            <div class="col-md-8">
-
-                <div class="wizard">
-                    <div class="row"><!--primer row que tiene el titulo-->
-                        <div class="col-md-2 col-xs-2"> </div>
-                        <div class="col-md-8 col-xs-8">
-
-                            <h1 class="titu">Preguntas para entrar a opciones</h1>
+					<div class="container"><!--container-->
+				    <div class="row"><!--primer row-->
+					<div class="col-md-12 col-xs-12 "><!--Primer col de 12-->
+					 <div class="row"><!--Segundo Row-->
+					<div class="col-md-10 col-xs-10  "><!--Segundo col de 10-->
+					
+					
+					 <div class="row"><!--Tercer  Row-->
+					<div class="col-md-12 col-xs-12 cuestionario"><!--tercer col de 12-->
+					
+					 <div class="row"><!--Cuarto  Row aqui van las cosas-->
+					<div class="col-md-2 col-xs-2 "><!--cuarta  col de 3 donde va el logo izquierdo-->
+					
+					<img class="preguntas-logo-izquierdo" src="img/logo-opciones.png"></img>
+					
+					</div><!--cerrar cuarto col de 3-->
+					<div class="col-md-8 col-xs-8 preguntas-cuestionario"><!--quinta   col de 6 donde van las preguntas-->
+					
+					<!--      Wizard container        -->   
+        
+                <form action="" method="">
+                <div class="card wizard-card ct-wizard-orange" id="wizard">
+                
+                <!--        You can switch "ct-wizard-orange"  with one of the next bright colors: "ct-wizard-blue", "ct-wizard-green", "ct-wizard-orange", "ct-wizard-red"             -->
+                
+                    	<div class="wizard-header">
+                        	<h3>
+                        	   Cuestionario para entrar a opciones </br>
+                        	   <small>Selecciona la opción que creas correcta.</small>
+                        	</h3>
+                    	</div>
+                    	<ul>
+                            <li><a href="#tabla-1" data-toggle="tab">1</a></li>
+                            <li><a href="#tabla-2" data-toggle="tab">2</a></li>
+							<li><a href="#tabla-3" data-toggle="tab">3</a></li>
+							<li><a href="#tabla-4" data-toggle="tab">4</a></li>
+							<li><a href="#tabla-5" data-toggle="tab">5</a></li>
+                            <li><a href="#tabla-6" data-toggle="tab">6</a></li>
+							
+                        </ul>
+                        <div class="tab-content preguntas"><!--Inicio tabla 1-->
+                            <div class="tab-pane" id="tabla-1">
+                            <div class="cuestionario-pregunta1"><!--pregunta 1-->
+							<h4><strong>pregunta 1:</strong></h4>
+								<p>quien es el mas guapo:</p>
+        
+			<label>	<input type="radio" ng-model="user.pregu1" value="guemez"> guemez  </label><br/>
+			<label> <input type="radio" ng-model="user.pregu1" value="luis"> luis  </label><br/>
+			<label> <input type="radio" ng-model="user.pregu1" value="maik"> Maik  </label><br/>
+			
+							</div><!--final pregunta 1-->
+							<div class="cuestionario-pregunta2"><!--pregunta 2-->
+							<h4><strong>pregunta 2:</strong></h4>
+								<p>quien es el mas guapo:</p>
+        
+			<label>	<input type="radio" ng-model="user.pregu1" value="guemez"> guemez  </label><br/>
+			<label> <input type="radio" ng-model="user.pregu1" value="luis"> luis  </label><br/>
+			<label> <input type="radio" ng-model="user.pregu1" value="maik"> Maik  </label><br/>
+			
+							</div><!--final pregunta 2-->
+							<div class="cuestionario-pregunta3"><!--pregunta 1-->
+							<h4><strong>pregunta 3:</strong></h4>
+								<p>quien es el mas guapo:</p>
+        
+			<label>	<input type="radio" ng-model="user.pregu1" value="guemez"> guemez  </label><br/>
+			<label> <input type="radio" ng-model="user.pregu1" value="luis"> luis  </label><br/>
+			<label> <input type="radio" ng-model="user.pregu1" value="maik"> Maik  </label><br/>
+			
+							</div><!--final pregunta 3-->
+							
+							<div class="cuestionario-pregunta4"><!--pregunta 4-->
+							<h4><strong>pregunta 4:</strong></h4>
+								<p>quien es el mas guapo:</p>
+        
+			<label>	<input type="radio" ng-model="user.pregu1" value="guemez"> guemez  </label><br/>
+			<label> <input type="radio" ng-model="user.pregu1" value="luis"> luis  </label><br/>
+			<label> <input type="radio" ng-model="user.pregu1" value="maik"> Maik  </label><br/>
+			
+							</div><!--final pregunta 4-->
+							<div class="cuestionario-pregunta5"><!--pregunta 5-->
+							<h4><strong>pregunta 5:</strong></h4>
+								<p>quien es el mas guapo:</p>
+        
+			<label>	<input type="radio" ng-model="user.pregu1" value="guemez"> guemez  </label><br/>
+			<label> <input type="radio" ng-model="user.pregu1" value="luis"> luis  </label><br/>
+			<label> <input type="radio" ng-model="user.pregu1" value="maik"> Maik  </label><br/>
+			
+							</div><!--final pregunta 1-->
+                            </div><!--Final tabla 1-->
+                            <div class="tab-pane" id="tabla-2"><!--Inicio tabla 2-->
+                               <div class="cuestionario-pregunta6"><!--pregunta 6-->
+							<h4><strong>pregunta 6:</strong></h4>
+								<p>quien es el mas guapo:</p>
+        
+			<label>	<input type="radio" ng-model="user.pregu1" value="guemez"> guemez  </label><br/>
+			<label> <input type="radio" ng-model="user.pregu1" value="luis"> luis  </label><br/>
+			<label> <input type="radio" ng-model="user.pregu1" value="maik"> Maik  </label><br/>
+			
+							</div><!--final pregunta 6-->
+							<div class="cuestionario-pregunta7"><!--pregunta 7-->
+							<h4><strong>pregunta 7:</strong></h4>
+								<p>quien es el mas guapo:</p>
+        
+			<label>	<input type="radio" ng-model="user.pregu1" value="guemez"> guemez  </label><br/>
+			<label> <input type="radio" ng-model="user.pregu1" value="luis"> luis  </label><br/>
+			<label> <input type="radio" ng-model="user.pregu1" value="maik"> Maik  </label><br/>
+			
+							</div><!--final pregunta 7-->
+							<div class="cuestionario-pregunta8"><!--pregunta 8-->
+							<h4><strong>pregunta 8:</strong></h4>
+								<p>quien es el mas guapo:</p>
+        
+			<label>	<input type="radio" ng-model="user.pregu1" value="guemez"> guemez  </label><br/>
+			<label> <input type="radio" ng-model="user.pregu1" value="luis"> luis  </label><br/>
+			<label> <input type="radio" ng-model="user.pregu1" value="maik"> Maik  </label><br/>
+			
+							</div><!--final pregunta 8-->
+							<div class="cuestionario-pregunta9"><!--pregunta 9-->
+							<h4><strong>pregunta 9:</strong></h4>
+								<p>quien es el mas guapo:</p>
+        
+			<label>	<input type="radio" ng-model="user.pregu1" value="guemez"> guemez  </label><br/>
+			<label> <input type="radio" ng-model="user.pregu1" value="luis"> luis  </label><br/>
+			<label> <input type="radio" ng-model="user.pregu1" value="maik"> Maik  </label><br/>
+			
+							</div><!--final pregunta 9-->
+							<div class="cuestionario-pregunta10"><!--pregunta 10-->
+							<h4><strong>pregunta 10:</strong></h4>
+								<p>quien es el mas guapo:</p>
+        
+			<label>	<input type="radio" ng-model="user.pregu1" value="guemez"> guemez  </label><br/>
+			<label> <input type="radio" ng-model="user.pregu1" value="luis"> luis  </label><br/>
+			<label> <input type="radio" ng-model="user.pregu1" value="maik"> Maik  </label><br/>
+			
+							</div><!--final pregunta 10-->
+                            </div><!--Final tabla 2-->
+							
+							<div class="tab-pane" id="tabla-3"><!--Inicio tabla 3-->
+                               <div class="cuestionario-pregunta11"><!--pregunta 11-->
+							<h4><strong>pregunta 11:</strong></h4>
+								<p>quien es el mas guapo:</p>
+        
+			<label>	<input type="radio" ng-model="user.pregu1" value="guemez"> guemez  </label><br/>
+			<label> <input type="radio" ng-model="user.pregu1" value="luis"> luis  </label><br/>
+			<label> <input type="radio" ng-model="user.pregu1" value="maik"> Maik  </label><br/>
+			
+							</div><!--final pregunta 11-->
+							<div class="cuestionario-pregunta12"><!--pregunta 12-->
+							<h4><strong>pregunta 12:</strong></h4>
+								<p>quien es el mas guapo:</p>
+        
+			<label>	<input type="radio" ng-model="user.pregu1" value="guemez"> guemez  </label><br/>
+			<label> <input type="radio" ng-model="user.pregu1" value="luis"> luis  </label><br/>
+			<label> <input type="radio" ng-model="user.pregu1" value="maik"> Maik  </label><br/>
+			
+							</div><!--final pregunta 12-->
+							<div class="cuestionario-pregunta13"><!--pregunta 13-->
+							<h4><strong>pregunta 13:</strong></h4>
+								<p>quien es el mas guapo:</p>
+        
+			<label>	<input type="radio" ng-model="user.pregu1" value="guemez"> guemez  </label><br/>
+			<label> <input type="radio" ng-model="user.pregu1" value="luis"> luis  </label><br/>
+			<label> <input type="radio" ng-model="user.pregu1" value="maik"> Maik  </label><br/>
+			
+							</div><!--final pregunta 13-->
+							<div class="cuestionario-pregunta14"><!--pregunta 14-->
+							<h4><strong>pregunta 14:</strong></h4>
+								<p>quien es el mas guapo:</p>
+        
+			<label>	<input type="radio" ng-model="user.pregu1" value="guemez"> guemez  </label><br/>
+			<label> <input type="radio" ng-model="user.pregu1" value="luis"> luis  </label><br/>
+			<label> <input type="radio" ng-model="user.pregu1" value="maik"> Maik  </label><br/>
+			
+							</div><!--final pregunta 14-->
+							<div class="cuestionario-pregunta15"><!--pregunta 15-->
+							<h4><strong>pregunta 15:</strong></h4>
+								<p>quien es el mas guapo:</p>
+        
+			<label>	<input type="radio" ng-model="user.pregu1" value="guemez"> guemez  </label><br/>
+			<label> <input type="radio" ng-model="user.pregu1" value="luis"> luis  </label><br/>
+			<label> <input type="radio" ng-model="user.pregu1" value="maik"> Maik  </label><br/>
+			
+							</div><!--final pregunta 15-->
+                            </div><!--Final tabla 3-->
+							
+								<div class="tab-pane" id="tabla-4"><!--Inicio tabla 4-->
+                               <div class="cuestionario-pregunta16"><!--pregunta 16-->
+							<h4><strong>pregunta 16:</strong></h4>
+								<p>quien es el mas guapo:</p>
+        
+			<label>	<input type="radio" ng-model="user.pregu1" value="guemez"> guemez  </label><br/>
+			<label> <input type="radio" ng-model="user.pregu1" value="luis"> luis  </label><br/>
+			<label> <input type="radio" ng-model="user.pregu1" value="maik"> Maik  </label><br/>
+			
+							</div><!--final pregunta 16-->
+							<div class="cuestionario-pregunta17"><!--pregunta 17-->
+							<h4><strong>pregunta 17:</strong></h4>
+								<p>quien es el mas guapo:</p>
+        
+			<label>	<input type="radio" ng-model="user.pregu1" value="guemez"> guemez  </label><br/>
+			<label> <input type="radio" ng-model="user.pregu1" value="luis"> luis  </label><br/>
+			<label> <input type="radio" ng-model="user.pregu1" value="maik"> Maik  </label><br/>
+			
+							</div><!--final pregunta 17-->
+							<div class="cuestionario-pregunta18"><!--pregunta 18-->
+							<h4><strong>pregunta 18:</strong></h4>
+								<p>quien es el mas guapo:</p>
+        
+			<label>	<input type="radio" ng-model="user.pregu1" value="guemez"> guemez  </label><br/>
+			<label> <input type="radio" ng-model="user.pregu1" value="luis"> luis  </label><br/>
+			<label> <input type="radio" ng-model="user.pregu1" value="maik"> Maik  </label><br/>
+			
+							</div><!--final pregunta 18-->
+							<div class="cuestionario-pregunta19"><!--pregunta 19-->
+							<h4><strong>pregunta 19:</strong></h4>
+								<p>quien es el mas guapo:</p>
+        
+			<label>	<input type="radio" ng-model="user.pregu1" value="guemez"> guemez  </label><br/>
+			<label> <input type="radio" ng-model="user.pregu1" value="luis"> luis  </label><br/>
+			<label> <input type="radio" ng-model="user.pregu1" value="maik"> Maik  </label><br/>
+			
+							</div><!--final pregunta 19-->
+							<div class="cuestionario-pregunta20"><!--pregunta 20-->
+							<h4><strong>pregunta 20:</strong></h4>
+								<p>quien es el mas guapo:</p>
+        
+			<label>	<input type="radio" ng-model="user.pregu1" value="guemez"> guemez  </label><br/>
+			<label> <input type="radio" ng-model="user.pregu1" value="luis"> luis  </label><br/>
+			<label> <input type="radio" ng-model="user.pregu1" value="maik"> Maik  </label><br/>
+			
+							</div><!--final pregunta 20-->
+                            </div><!--final tabla 4-->
+								<div class="tab-pane" id="tabla-5"><!--Inicio tabla 5-->
+                               <div class="cuestionario-pregunta21"><!--pregunta 21-->
+							<h4><strong>pregunta 21:</strong></h4>
+								<p>quien es el mas guapo:</p>
+        
+			<label>	<input type="radio" ng-model="user.pregu1" value="guemez"> guemez  </label><br/>
+			<label> <input type="radio" ng-model="user.pregu1" value="luis"> luis  </label><br/>
+			<label> <input type="radio" ng-model="user.pregu1" value="maik"> Maik  </label><br/>
+			
+							</div><!--final pregunta 21-->
+							
+							<div class="cuestionario-pregunta22"><!--pregunta 22-->
+							<h4><strong>pregunta 22:</strong></h4>
+								<p>quien es el mas guapo:</p>
+        
+			<label>	<input type="radio" ng-model="user.pregu1" value="guemez"> guemez  </label><br/>
+			<label> <input type="radio" ng-model="user.pregu1" value="luis"> luis  </label><br/>
+			<label> <input type="radio" ng-model="user.pregu1" value="maik"> Maik  </label><br/>
+			
+							</div><!--final pregunta 22-->
+							<div class="cuestionario-pregunta23"><!--pregunta 23-->
+							<h4><strong>pregunta 23:</strong></h4>
+								<p>quien es el mas guapo:</p>
+        
+			<label>	<input type="radio" ng-model="user.pregu1" value="guemez"> guemez  </label><br/>
+			<label> <input type="radio" ng-model="user.pregu1" value="luis"> luis  </label><br/>
+			<label> <input type="radio" ng-model="user.pregu1" value="maik"> Maik  </label><br/>
+			
+							</div><!--final pregunta 23-->
+							<div class="cuestionario-pregunta24"><!--pregunta 24-->
+							<h4><strong>pregunta 24:</strong></h4>
+								<p>quien es el mas guapo:</p>
+        
+			<label>	<input type="radio" ng-model="user.pregu1" value="guemez"> guemez  </label><br/>
+			<label> <input type="radio" ng-model="user.pregu1" value="luis"> luis  </label><br/>
+			<label> <input type="radio" ng-model="user.pregu1" value="maik"> Maik  </label><br/>
+			
+							</div><!--final pregunta 24-->
+							<div class="cuestionario-pregunta25"><!--pregunta 25-->
+							<h4><strong>pregunta 25:</strong></h4>
+								<p>quien es el mas guapo:</p>
+        
+			<label>	<input type="radio" ng-model="user.pregu1" value="guemez"> guemez  </label><br/>
+			<label> <input type="radio" ng-model="user.pregu1" value="luis"> luis  </label><br/>
+			<label> <input type="radio" ng-model="user.pregu1" value="maik"> Maik  </label><br/>
+			
+							</div><!--final pregunta 25-->							
+                            </div><!--Final tabla 5-->
+							
+							
+                            <div class="tab-pane" id="tabla-6"><!--Inicio tabla final-->
+                                <div class="cuestionario-pregunta26"><!--pregunta 26-->
+							<h4><strong>pregunta 26:</strong></h4>
+								<p>quien es el mas guapo:</p>
+        
+			<label>	<input type="radio" ng-model="user.pregu1" value="guemez"> guemez  </label><br/>
+			<label> <input type="radio" ng-model="user.pregu1" value="luis"> luis  </label><br/>
+			<label> <input type="radio" ng-model="user.pregu1" value="maik"> Maik  </label><br/>
+			
+							</div><!--final pregunta 26-->
+							<div class="cuestionario-pregunta27"><!--pregunta 27-->
+							<h4><strong>pregunta 27:</strong></h4>
+								<p>quien es el mas guapo:</p>
+        
+			<label>	<input type="radio" ng-model="user.pregu1" value="guemez"> guemez  </label><br/>
+			<label> <input type="radio" ng-model="user.pregu1" value="luis"> luis  </label><br/>
+			<label> <input type="radio" ng-model="user.pregu1" value="maik"> Maik  </label><br/>
+			
+							</div><!--final pregunta 27-->
+							<div class="cuestionario-pregunta28"><!--pregunta 28-->
+							<h4><strong>pregunta 28:</strong></h4>
+								<p>quien es el mas guapo:</p>
+        
+			<label>	<input type="radio" ng-model="user.pregu1" value="guemez"> guemez  </label><br/>
+			<label> <input type="radio" ng-model="user.pregu1" value="luis"> luis  </label><br/>
+			<label> <input type="radio" ng-model="user.pregu1" value="maik"> Maik  </label><br/>
+			
+							</div><!--final pregunta 28-->
+							<div class="cuestionario-pregunta29"><!--pregunta 29-->
+							<h4><strong>pregunta 29:</strong></h4>
+								<p>quien es el mas guapo:</p>
+        
+			<label>	<input type="radio" ng-model="user.pregu1" value="guemez"> guemez  </label><br/>
+			<label> <input type="radio" ng-model="user.pregu1" value="luis"> luis  </label><br/>
+			<label> <input type="radio" ng-model="user.pregu1" value="maik"> Maik  </label><br/>
+			
+							</div><!--final pregunta 29-->
+							<div class="cuestionario-pregunta30"><!--pregunta 30-->
+							<h4><strong>pregunta 30:</strong></h4>
+								<p>quien es el mas guapo:</p>
+        
+			<label>	<input type="radio" ng-model="user.pregu1" value="guemez"> guemez  </label><br/>
+			<label> <input type="radio" ng-model="user.pregu1" value="luis"> luis  </label><br/>
+			<label> <input type="radio" ng-model="user.pregu1" value="maik"> Maik  </label><br/>
+			
+							</div><!--final pregunta 30-->
+                            </div><!--Final tabla final-->
                         </div>
-
-                        <div ng-transclude></div>
-
-                        <div class="row"><!--tercer row que tiene el boton de cambiar de pagina-->
-                            <div class="col-md-5 col-xs-3"></div>
-                            <div class="col-md-6 col-xs-8">
-
-
-                                <div class="buttons">
-                                    <a class="btn btn-default" ng-click="showPreviousStep()" ng-show="hasPrevious()">Anterior</a>
-                                    <a class="btn btn-default" ng-click="showNextStep()" ng-show="hasNext()">Siguiente</a>
+                        <div class="wizard-footer">
+                            	<div class="pull-right">
+                                    <input type='button' class='btn btn-next btn-fill btn-warning btn-wd btn-sm' name='next' value='Siguiente' />
+                                    <input type='button' class='btn btn-finish btn-fill btn-warning btn-wd btn-sm' name='finish' value='Enviar' />
+        
                                 </div>
-
-                            </div>
-
-
-                        </div>
-
-                    </div>
+                                <div class="pull-left">
+                                    <input type='button' class='btn btn-previous btn-fill btn-default btn-wd btn-sm' name='previous' value='Anterior' />
+                                </div>
+                                <div class="clearfix"></div>
+                        </div>	
                 </div>
-
-            </div>
-            <div class="col-md-2"></div>
-        </row>
-
-    </script>
-<div class="row"><!--segundo row que tiene preguntas-->
-	         	
-    <wizard on-before-step-change="log(event)" on-step-changing="log(event)" on-after-step-change="log(event)">
-<div class="col-md-5 col-xs-3"></div>
-        <div class="col-md-7 col-xs-8">
-     <step>
-        <h4><strong>pregunta 1:</strong></h4>
-        <p>quien es el mas guapo:</p>
-        
-        <label>
-        <input type="radio" ng-model="user.pregu1" value="guemez">
-         guemez  </label><br/>
-  <label>
-    <input type="radio" ng-model="user.pregu1" value="luis">
-    luis  </label><br/>
-  <label>
-    <input type="radio" ng-model="user.pregu1" value="maik">
-    Maik  </label><br/>
-  <label>
-    <input type="radio" ng-model="user.pregu1" value="jordan">
- jordan  </label><br/>
-      </step>
-
-      <step>
-        <h4><strong>pregunta 2:</strong></h4>
-        <p>quien es el mas guapo:</p>
-        
-        <label>
-        <input type="radio" ng-model="user.pregu2" value="guemez">
-         guemez  </label><br/>
-  <label>
-    <input type="radio" ng-model="user.pregu2" value="Luis">
-    luis  </label><br/>
-  <label>
-    <input type="radio" ng-model="user.pregu2" value="Maik">
-    Maik  </label><br/>
-  <label>
-    <input type="radio" ng-model="user.pregu2" value="jordan">
- jordan  </label><br/>
-      </step>
-
-      <step>
-        <h4><strong>pregunta 3:</strong></h4>
-        <p>quien es el mas guapo:</p>
-        
-        <input type="radio" ng-model="user.pregu3" value="guemez">
-         guemez
-  </label><br/>
-  <label>
-    <input type="radio" ng-model="user.pregu3" value="luis">
-    luis  </label><br/>
-  <label>
-    <input type="radio" ng-model="user.pregu3" value="maik">
-    Maik  </label><br/>
-  <label>
-    <input type="radio" ng-model="user.pregu3" value="jordan">
- jordan  </label><br/>
-      </step>
-
-      <step>
-         <h4><strong>pregunta 4:</strong></h4>
-        <p>quien es el mas guapo:</p>
-        
-        <input type="radio" ng-model="user.pregu4" value="guemez">
-         guemez
-  </label><br/>
-  <label>
-    <input type="radio" ng-model="user.pregu4" value="luis">
-    luis  </label><br/>
-  <label>
-    <input type="radio" ng-model="user.pregu4" value="maik">
-    Maik  </label><br/>
-  <label>
-    <input type="radio" ng-model="user.pregu4" value="jordan">
- jordan  </label><br/>
-      </step>
-      <br/>
-		<step>
-
-         <h4><strong>pregunta 5:</strong></h4>
-        <p>quien es el mas guapo:</p>
-        
-           <input type="radio" ng-model="user.pregu5" value="1">
-           1
-  </label><br/>
-  <label>
-    <input type="radio" ng-model="user.pregu5" value="2">
-    2  </label><br/>
-  <label>
-    <input type="radio" ng-model="user.pregu5" value="3">
-    3  </label><br/>
-      </step>
-      <step >
-
-         <h4><strong>pregunta 6:</strong></h4>
-        <p>quien es el mas guapo:</p>
-    
-           <input type="radio" ng-model="user.pregu6" value="1">
-           1
-  </label><br/>
-  <label>
-    <input type="radio" ng-model="user.pregu6" value="2">
-    2  </label><br/>
-  <label>
-    <input type="radio" ng-model="user.pregu6" value="3">
-    3  </label><br/>
-      </step>
-      
-      </div>
-	  <div class="col-md-5 col-xs-4"></div>
-			<div class="col-md-6 col-xs-6">
-      <step title="Respuestas">
-
-        <strong>Pregunta 1:</strong> {{user.pregu1}}
-        <br>
-        <strong>Pregunta 2:</strong> {{user.pregu2}}
-        <br>
-        <strong>Pregunta 3:</strong> {{user.pregu3}}
-        <br>
-        <strong>Pregunta 4:</strong> {{user.pregu4}}
-        <br>
-        <strong>Pregunta 5:</strong> {{user.pregu5}}
-        <br>
-        <strong>Pregunta 6:</strong> {{user.pregu6}}
-        <br>
-      </step>
-    </wizard>
-  </div>
-  </div>
-  
-  <div class="reserve">
-                    <small>
-                        <p>2015 - Todos los derechos reservados</p>
-                    </small>                </div>
-                </div>
-</div>
+                </form> <!-- wizard container -->
+					
+					
+					</div><!--quinta  col de 6-->
+					
+					<div class="col-md-2 col-xs-2 "><!--sexta  col de 3 donde va el logo derecho-->
+					
+					<img class="preguntas-logo-derecho" src="img/logo-opciones.png"></img>
+					
+					</div><!--cerrar cuarto col de 3-->
+					
+					</div><!--cerrar Cuarto row-->
+					
+					</div><!--cerrar tercer col de 12-->
+					
+					</div><!--cerrar tercer row-->
+					
+					
+					
+					
+					</div><!--cerrar segundo col de 10-->
+					
+					</div><!---cerrar segundo row->
+					</div><!--cerrar primer col de 12-->
+					</div><!--cerrar primer row-->
+					</div><!--cerrar container-->
 
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
+  
 </body>
+<script src="js/jquery-1.10.2.js" type="text/javascript"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+		
+	<!--   plugins 	 -->
+	<script src="js/jquery.bootstrap.wizard.js" type="text/javascript"></script>
+	<script src="js/wizard.js"></script>
 </html>
 		

@@ -150,7 +150,7 @@ a, a:hover{
 
 
 
-body{
+.resultado{
 
     background: url('../img/stones3.jpg') no-repeat;
 
@@ -291,4 +291,98 @@ h4{
     background-color: #D6F2F2;
     border-radius: 5px 5px; 
     text-shadow: #2C3E50 1px 1px 5px;
+}
+/*cuestionario*/
+.preguntas1body{
+ background: url('../img/stones3.jpg') no-repeat;
+    
+	}
+
+
+.cuestionario{
+position:relative;
+top:5em;
+
+
+padding-top: 30px;
+background: rgba(255, 255, 255, 0.9);
+
+}
+
+.preguntas-logo-izquierdo{
+width:162px;
+height:85px;
+
+}
+.preguntas-cuestionario{
+
+background: rgba(255, 255, 255, 0.6);
+
+}
+
+.preguntas-logo-derecho{
+margin-left:-22px;
+width:162px;
+height:85px;
+
+
+}
+
+/*            Navigation menu                */
+.nav-pills > li + li {
+    margin-left: 0;
+}
+.nav-pills > li > a {
+    border: 1px solid #2CA8FF;
+    border-radius: 0;
+    color: #2CA8FF;
+    margin-left: -1px;
+}
+
+
+
+/*      Here the code for the wizard           */
+
+label{
+    font-weight: 400;
+}
+
+
+
+.wizard-card .tab-content{
+    min-height: 340px;
+    padding: 20px 10px;
+}
+
+.wizard-card .wizard-footer{
+    padding: 0 10px;
+}
+
+.wizard-card .disabled{
+    display: none;
+}
+
+.wizard-card .wizard-header h3{
+    font-weight: 200;
+    text-align: center;
+}
+.wizard-card > ul > li{
+    text-align: center;
+}
+.wizard-card > ul > li a {
+    border: 0 !important;
+    background-color: #999999;
+    color: #FFFFFF !important;
+    font-size: 12px;
+}
+.preguntas{
+
+text-align:center;
+
+}
+
+.cuestionario{
+
+margin-left: 79px;
+
 }
