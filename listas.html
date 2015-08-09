@@ -48,9 +48,7 @@
                                         <th>Apellido Materno</th>
                                         <th>Nivel de estudios</th>
                                         <th>Puesto</th>
-                                        <th><i class="glyphicon glyphicon-user"></i></th>
-                                        <th><i class="glyphicon glyphicon-earphone"></i></th>
-                                        <th><i class="glyphicon glyphicon-envelope"></i></th>
+                                        <th><i class="glyphicon glyphicon-user"></i> Similitud</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -60,6 +58,7 @@
                                         <td>{{registro.apellido_materno}}</td>
                                         <td>{{registro.nivel_estudios}}</td>
                                         <td>{{registro.puesto}}</td>
+                                        <td>{{getRandomSpan()}}</td>
                                     </tr>
                                 </tbody>
                             </table>
