@@ -8,7 +8,7 @@ angular.module('registerApp', ['firebase'])
         $scope.registros = $firebaseArray(ref);
 
         $scope.getRandomSpan = function(){
-            return Math.floor((Math.random()*(100 - 40))+10);
+            return Math.floor((Math.random() * 41) + 40);
         };
 
         $scope.agregarRegistro = function(){
