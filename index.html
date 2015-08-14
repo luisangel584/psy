@@ -18,8 +18,23 @@
            
            <div class="col-md-2 col-xs-2"></div>
            <div class="col-md-8 col-xs-8 login-card">
-               <h1>Acceso a usuario</h1>
-               <hr>
+               <div class="row">
+                   <div class="col-md-1 col-xs-1"></div>
+                   <div class="col-md-10 col-xs-10">
+                       <div class="row">
+                           <div class="col-md-3 col-xs-2"></div>
+                           <div class="col-md-6 col-xs-6">
+                               <h1>Acceso a usuario</h1>
+                               <hr>
+                           </div>
+                           <div class="col-md-3 col-xs-4">
+                               <img class="img-responsive" src="img/logo-opciones.png" alt="Logo Opciones"/>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="col-md-1 col-xs 1"></div>
+               </div>
+
                
                <div class="row">
                    
@@ -45,10 +60,13 @@
 
                        </div>
 
-                         <button class="btn btn-primary" ng-disabled="forma.$invalid">Ingresar</button>
+                         <a href="home.html">
+                            <button class="btn btn-primary" ng-disabled="forma.$invalid">Ingresar</button>
+                         </a>
                         <button class="btn btn-default">Limpiar</button>
 
                         <a id="register" href="registro.html">No tengo una cuenta</a>
+                         <a href="admin.html">Administrador</a>
 
                    </form>
                        
