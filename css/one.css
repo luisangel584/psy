@@ -342,7 +342,7 @@ label{
     display: none;
 }
 
-.wizard-card .wizard-header h3{
+.wizard-card .wizard-header h2{
     font-weight: 200;
     text-align: center;
 }
