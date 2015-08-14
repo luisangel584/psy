@@ -5,7 +5,7 @@
 	<title>Cuestionario Grupo opciones </title>
 	 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">	
-	<link href="css/two.css" rel="stylesheet" />  
+	<link href="css/one.css" rel="stylesheet" />  
     
   
 </head>
@@ -40,8 +40,9 @@
                 
                     		<div class="wizard-header">
                         	<h3>
-                        	   Cuestionario para entrar a opciones </br>
-                        	   <small>Selecciona la opción que creas correcta.</small>
+                        	   Prueba Psicometríca </br>
+							   
+                    
                         	</h3>
                     	</div>
                     	<ul>
@@ -49,298 +50,875 @@
                             <li><a href="#tabla-2" data-toggle="tab">2</a></li>
 							<li><a href="#tabla-3" data-toggle="tab">3</a></li>
 							<li><a href="#tabla-4" data-toggle="tab">4</a></li>
-							<li><a href="#tabla-5" data-toggle="tab">5</a></li>
-                            <li><a href="#tabla-6" data-toggle="tab">6</a></li>
+							
 							
                         </ul>
                         <div class="tab-content preguntas"><!--Inicio tabla 1-->
                             <div class="tab-pane" id="tabla-1">
-                            <div class="cuestionario-pregunta1"><!--pregunta 1-->
-							<h4><strong>pregunta 1:</strong></h4>
-								<p>quien es el mas guapo:</p>
-        
-			<label>	<input type="radio" name="pregunta1" ng-model="user.pregu1" value="guemez"> guemez </label><br/>
-			<label> <input type="radio" name="pregunta1" ng-model="user.pregu1" value="luis"> luis  </label><br/>
-			<label> <input type="radio" name="pregunta1" ng-model="user.pregu1" value="maik"> Maik  </label><br/>
-			
-							</div><!--final pregunta 1-->
-							<div class="cuestionario-pregunta2"><!--pregunta 2-->
-							<h4><strong>pregunta 2:</strong></h4>
-								<p>quien es el mas guapo:</p>
-        
-			<label>	<input type="radio" name="pregunta2" ng-model="user.pregu2" value="guemez"> guemez  </label><br/>
-			<label> <input type="radio" name="pregunta2" ng-model="user.pregu2" value="luis"> luis  </label><br/>
-			<label> <input type="radio" name="pregunta2" ng-model="user.pregu2" value="maik"> Maik  </label><br/>
-			
-							</div><!--final pregunta 2-->
-							<div class="cuestionario-pregunta3"><!--pregunta 1-->
-							<h4><strong>pregunta 3:</strong></h4>
-								<p>quien es el mas guapo:</p>
-        
-			<label>	<input type="radio" name="pregunta3" ng-model="user.pregu3" value="guemez"> guemez  </label><br/>
-			<label> <input type="radio" name="pregunta3" ng-model="user.pregu3" value="luis"> luis  </label><br/>
-			<label> <input type="radio" name="pregunta3" ng-model="user.pregu3" value="maik"> Maik  </label><br/>
-			
-							</div><!--final pregunta 3-->
-							
-							<div class="cuestionario-pregunta4"><!--pregunta 4-->
-							<h4><strong>pregunta 4:</strong></h4>
-								<p>quien es el mas guapo:</p>
-        
-			<label>	<input type="radio" name="pregunta4" ng-model="user.pregu4" value="guemez"> guemez  </label><br/>
-			<label> <input type="radio" name="pregunta4" ng-model="user.pregu4" value="luis"> luis  </label><br/>
-			<label> <input type="radio" name="pregunta4" ng-model="user.pregu4" value="maik"> Maik  </label><br/>
-			
-							</div><!--final pregunta 4-->
-							<div class="cuestionario-pregunta5"><!--pregunta 5-->
-							<h4><strong>pregunta 5:</strong></h4>
-								<p>quien es el mas guapo:</p>
-        
-			<label>	<input type="radio" name="pregunta5" ng-model="user.pregu5" value="guemez"> guemez  </label><br/>
-			<label> <input type="radio" name="pregunta5" ng-model="user.pregu5" value="luis"> luis  </label><br/>
-			<label> <input type="radio" name="pregunta5" ng-model="user.pregu5" value="maik"> Maik  </label><br/>
-			
-							</div><!--final pregunta 1-->
+						<div class="row"><!-- Row pregunta1-->
+						 
+						 <div class="col-md-3 col-xs-3"><!-- col pregunta1 radio izquierdo-->
+						</br>
+					
+						<div class="preguntas1"><!-- Grupo 1-->
+		                <label class="label1" >Persuasivo</label></br>						 
+						<label class="label2" >Gentil</label> </br>
+						<label class="label3" >Humilde</label> </br>
+						<label class="label4" >Original</label>
+						</div>
+						<hr class="lineadiv"><!-- final Grupo 1-->
+					
+						 </div><!--  final col pregunta1 radio izquierdo-->
+						 <div class="col-md-4 col-xs-4"><!-- col pregunta1 radio izquierdo-->
+						<div class="radioizquierdo"><!-- comienzo Grupo 1-->
+		                    <h4 class="titumaspregu">Mas</h4>
+						   <input class="radiopersuasivoizq" type="radio" name="pregunta1izq" ng-model="user.pregu1izq" value="guemez"></br>
+							<input class="radiogentilizq" type="radio" name="pregunta1izq" ng-model="user.pregu1izq" value="guemez"> </br>
+							<input class="radiohumildeizq" type="radio" name="pregunta1izq" ng-model="user.pregu1izq" value="guemez"></br>
+							<input class="radiooriginalizq" type="radio" name="pregunta1izq" ng-model="user.pregu1izq" value="guemez">
+						</div><!-- final Grupo 1-->
+						
+						 </div><!--  final col pregunta1 radio izquierdo-->
+						 
+						 <div class="col-md-3 col-xs-3"><!-- col pregunta1 radio derecho-->
+							<div class="radioderecho"><!-- Grupo 2-->
+							<h4 class="titumenospregu">Menos</h4> 
+							<input class="radiopersuasivoder" type="radio" name="pregunta1der" ng-model="user.pregu1der" value="guemez"></br>
+							<input class="radiogentilder" type="radio" name="pregunta1der" ng-model="user.pregu1der" value="guemez"> </br>
+							<input class="radiohumildeder" type="radio" name="pregunta1der" ng-model="user.pregu1der" value="guemez"></br>
+							<input class="radiooriginalder" type="radio" name="pregunta1der" ng-model="user.pregu1der" value="guemez">
+							</div>
+						 </div><!--  final col pregunta1 radio derecho-->
+						 
+						</div><!--final Row pregunta1-->
+						 
+						<div class="row"><!-- Row pregunta2-->
+						 
+						 <div class="col-md-3 col-xs-3"><!-- col pregunta2 radio izquierdo-->
+						</br>
+					
+						<div class="preguntas1"><!-- Grupo 2-->
+		                <label class="label1" >Agresivo</label></br>						 
+						<label class="label2" >Fiestero</label> </br>
+						<label class="label3" >Comodino</label> </br>
+						<label class="label4" >Temeroso</label>
+						</div>
+						<hr class="lineadiv"><!-- final Grupo 2-->
+					
+						 </div><!--  final col pregunta2 radio izquierdo-->
+						 <div class="col-md-4 col-xs-4"><!-- col pregunta2 radio izquierdo-->
+						<div class="radioizquierdo"><!-- comienzo Grupo 2-->
+		                    <h4 class="titumaspregu">Mas</h4>
+						   <input class="radioagresivoizq" type="radio" name="pregunta2izq" ng-model="user.pregu2izq" value="guemez"></br>
+							<input class="radiofiesteroizq" type="radio" name="pregunta2izq" ng-model="user.pregu2izq" value="guemez"> </br>
+							<input class="radiocomodinoizq" type="radio" name="pregunta2izq" ng-model="user.pregu2izq" value="guemez"></br>
+							<input class="radiotemerosoizq" type="radio" name="pregunta2izq" ng-model="user.pregu2izq" value="guemez">
+						</div><!-- final Grupo 2-->
+						
+						 </div><!--  final col pregunta2 radio izquierdo-->
+						 
+						 <div class="col-md-3 col-xs-3"><!-- col pregunta1 radio derecho-->
+							<div class="radioderecho"><!-- Grupo 2-->
+							<h4 class="titumenospregu">Menos</h4> 
+							<input class="radioagresivoder" type="radio" name="pregunta1der" ng-model="user.pregu1der" value="guemez"></br>
+							<input class="radiofiesteroder" type="radio" name="pregunta1der" ng-model="user.pregu1der" value="guemez"> </br>
+							<input class="radiocomodinoder" type="radio" name="pregunta1der" ng-model="user.pregu1der" value="guemez"></br>
+							<input class="radiotemerosoder" type="radio" name="pregunta1der" ng-model="user.pregu1der" value="guemez">
+							</div>
+						 </div><!--  final col pregunta2 radio derecho-->
+						 
+						</div><!--final Row pregunta2-->
+					<div class="row"><!-- Row pregunta2-->
+						 
+						 <div class="col-md-3 col-xs-3"><!-- col pregunta2 radio izquierdo-->
+						</br>
+					
+						<div class="preguntas1"><!-- Grupo 3-->
+		                <label class="label1" >Agradable</label></br>						 
+						<label class="label2" >Ateo</label> </br>
+						<label class="label3" >Tenaz</label> </br>
+						<label class="label4" >Atractivo</label>
+						</div>
+						<hr class="lineadiv"><!-- final Grupo 3-->
+					
+						 </div><!--  final col pregunta3 radio izquierdo-->
+						 <div class="col-md-4 col-xs-4"><!-- col pregunta3 radio izquierdo-->
+						<div class="radioizquierdo"><!-- comienzo Grupo 3-->
+		                    <h4 class="titumaspregu">Mas</h4>
+						   <input class="radioagradableizq" type="radio" name="pregunta3izq" ng-model="user.pregu3izq" value="guemez"></br>
+							<input class="radioateoizq" type="radio" name="pregunta3izq" ng-model="user.pregu3izq" value="guemez"> </br>
+							<input class="radiotenazizq" type="radio" name="pregunta3izq" ng-model="user.pregu3izq" value="guemez"></br>
+							<input class="radioatractivoizq" type="radio" name="pregunta3izq" ng-model="user.pregu3izq" value="guemez">
+						</div><!-- final Grupo 3-->
+						
+						 </div><!--  final col pregunta3 radio izquierdo-->
+						 
+						 <div class="col-md-3 col-xs-3"><!-- col pregunta3 radio derecho-->
+							<div class="radioderecho"><!-- Grupo 3-->
+							<h4 class="titumenospregu">Menos</h4> 
+							<input class="radioagradableder" type="radio" name="pregunta3der" ng-model="user.pregu3der" value="guemez"></br>
+							<input class="radioateoder" type="radio" name="pregunta3der" ng-model="user.pregu3der" value="guemez"> </br>
+							<input class="radiotenazder" type="radio" name="pregunta3der" ng-model="user.pregu3der" value="guemez"></br>
+							<input class="radioatractivoder" type="radio" name="pregunta3der" ng-model="user.pregu3der" value="guemez">
+							</div>
+						 </div><!--  final col pregunta3 radio derecho-->
+						 
+						</div><!--final Row pregunta3-->
+						 
+						 <div class="row"><!-- Row pregunta4-->
+						 
+						 <div class="col-md-3 col-xs-3"><!-- col pregunta4 radio izquierdo-->
+						</br>
+					
+						<div class="preguntas1"><!-- Grupo 4-->
+		                <label class="label1" >Cauteloso</label></br>						 
+						<label class="label2" >Determinado</label> </br>
+						<label class="label3" >Convincente</label> </br>
+						<label class="label4" >Bonachón</label>
+						</div>
+						<hr class="lineadiv"><!-- final Grupo 4-->
+					
+						 </div><!--  final col pregunta4 radio izquierdo-->
+						 <div class="col-md-4 col-xs-4"><!-- col pregunta2 radio izquierdo-->
+						<div class="radioizquierdo"><!-- comienzo Grupo 4-->
+		                    <h4 class="titumaspregu">Mas</h4>
+						   <input class="radiocautelosoizq" type="radio" name="pregunta4izq" ng-model="user.pregu4izq" value="guemez"></br>
+							<input class="radiodeterminadoizq" type="radio" name="pregunta4izq" ng-model="user.pregu4izq" value="guemez"> </br>
+							<input class="radioconvincenteizq" type="radio" name="pregunta4izq" ng-model="user.pregu4izq" value="guemez"></br>
+							<input class="radiobonachonizq" type="radio" name="pregunta4izq" ng-model="user.pregu4izq" value="guemez">
+						</div><!-- final Grupo 4-->
+						
+						 </div><!--  final col pregunta4 radio izquierdo-->
+						 
+						 <div class="col-md-3 col-xs-3"><!-- col pregunta4 radio derecho-->
+							<div class="radioderecho"><!-- Grupo 4-->
+							<h4 class="titumenospregu">Menos</h4> 
+							<input class="radiocautelosoder" type="radio" name="pregunta4der" ng-model="user.pregu4der" value="guemez"></br>
+							<input class="radiodeterminadoder" type="radio" name="pregunta4der" ng-model="user.pregu4der" value="guemez"> </br>
+							<input class="radioconvincenteder" type="radio" name="pregunta4der" ng-model="user.pregu4der" value="guemez"></br>
+							<input class="radiobonachonder" type="radio" name="pregunta4der" ng-model="user.pregu4der" value="guemez">
+							</div>
+						 </div><!--  final col pregunta4 radio derecho-->
+						 
+						</div><!--final Row pregunta4-->
+						
+						<div class="row"><!-- Row pregunta5-->
+						 
+						 <div class="col-md-3 col-xs-3"><!-- col pregunta5 radio izquierdo-->
+						</br>
+					
+						<div class="preguntas1"><!-- Grupo 5-->
+		                <label class="label1" >Dócil</label></br>						 
+						<label class="label2" >Atrevido</label> </br>
+						<label class="label3" >Leal</label> </br>
+						<label class="label4" >Encantador</label>
+						</div>
+						<hr class="lineadiv"><!-- final Grupo 5-->
+					
+						 </div><!--  final col pregunta5 radio izquierdo-->
+						 <div class="col-md-4 col-xs-4"><!-- col pregunta5 radio izquierdo-->
+						<div class="radioizquierdo"><!-- comienzo Grupo 5-->
+		                    <h4 class="titumaspregu">Mas</h4>
+						   <input class="radiodocilizq" type="radio" name="pregunta5izq" ng-model="user.pregu5izq" value="guemez"></br>
+							<input class="radioatrevidoizq" type="radio" name="pregunta5izq" ng-model="user.pregu5izq" value="guemez"> </br>
+							<input class="radiolealizq" type="radio" name="pregunta5izq" ng-model="user.pregu5izq" value="guemez"></br>
+							<input class="radioencantadorizq" type="radio" name="pregunta5izq" ng-model="user.pregu5izq" value="guemez">
+						</div><!-- final Grupo 5-->
+						
+						 </div><!--  final col pregunta5 radio izquierdo-->
+						 
+						 <div class="col-md-3 col-xs-3"><!-- col pregunta5 radio derecho-->
+							<div class="radioderecho"><!-- Grupo 5-->
+							<h4 class="titumenospregu">Menos</h4> 
+							<input class="radiodocilder" type="radio" name="pregunta5der" ng-model="user.pregu5der" value="guemez"></br>
+							<input class="radioatrevidoder" type="radio" name="pregunta5der" ng-model="user.pregu5der" value="guemez"> </br>
+							<input class="radiolealder" type="radio" name="pregunta5der" ng-model="user.pregu5der" value="guemez"></br>
+							<input class="radioencantadorder" type="radio" name="pregunta5der" ng-model="user.pregu5der" value="guemez">
+							</div>
+						 </div><!--  final col pregunta5 radio derecho-->
+						 
+						</div><!--final Row pregunta6-->
+						<div class="row"><!-- Row pregunta6-->
+						 
+						 <div class="col-md-3 col-xs-3"><!-- col pregunta6 radio izquierdo-->
+						</br>
+					
+						<div class="preguntas1"><!-- Grupo 6-->
+		                <label class="label1" >Dispuesto</label></br>						 
+						<label class="label2" >Deseoso</label> </br>
+						<label class="label3" >Consecuente</label> </br>
+						<label class="label4" >Entusiasta</label>
+						</div>
+						<hr class="lineadiv"><!-- final Grupo 6-->
+					
+						 </div><!--  final col pregunta6 radio izquierdo-->
+						 <div class="col-md-4 col-xs-4"><!-- col pregunta6 radio izquierdo-->
+						<div class="radioizquierdo"><!-- comienzo Grupo 6-->
+		                    <h4 class="titumaspregu">Mas</h4>
+						   <input class="radiodispuestoizq" type="radio" name="pregunta2izq" ng-model="user.pregu2izq" value="guemez"></br>
+							<input class="radiodeseosoizq" type="radio" name="pregunta2izq" ng-model="user.pregu2izq" value="guemez"> </br>
+							<input class="radioconsecuenteizq" type="radio" name="pregunta2izq" ng-model="user.pregu2izq" value="guemez"></br>
+							<input class="radioentusiastaizq" type="radio" name="pregunta2izq" ng-model="user.pregu2izq" value="guemez">
+						</div><!-- final Grupo 6-->
+						
+						 </div><!--  final col pregunta6 radio izquierdo-->
+						 
+						 <div class="col-md-3 col-xs-3"><!-- col pregunta6 radio derecho-->
+							<div class="radioderecho"><!-- Grupo 6-->
+							<h4 class="titumenospregu">Menos</h4> 
+							<input class="radioagresivoder" type="radio" name="pregunta1der" ng-model="user.pregu1der" value="guemez"></br>
+							<input class="radiofiesteroder" type="radio" name="pregunta1der" ng-model="user.pregu1der" value="guemez"> </br>
+							<input class="radiocomodinoder" type="radio" name="pregunta1der" ng-model="user.pregu1der" value="guemez"></br>
+							<input class="radiotemerosoder" type="radio" name="pregunta1der" ng-model="user.pregu1der" value="guemez">
+							</div>
+						 </div><!--  final col pregunta6 radio derecho-->
+						 
+						</div><!--final Row pregunta6-->
+						
                             </div><!--Final tabla 1-->
                             <div class="tab-pane" id="tabla-2"><!--Inicio tabla 2-->
-                               <div class="cuestionario-pregunta6"><!--pregunta 6-->
-							<h4><strong>pregunta 6:</strong></h4>
-								<p>quien es el mas guapo:</p>
-        
-			<label>	<input type="radio" name="pregunta6" ng-model="user.pregu6" value="guemez"> guemez  </label><br/>
-			<label> <input type="radio" name="pregunta6"ng-model="user.pregu6" value="luis"> luis  </label><br/>
-			<label> <input type="radio" name="pregunta6" ng-model="user.pregu6" value="maik"> Maik  </label><br/>
-			
-							</div><!--final pregunta 6-->
-							<div class="cuestionario-pregunta7"><!--pregunta 7-->
-							<h4><strong>pregunta 7:</strong></h4>
-								<p>quien es el mas guapo:</p>
-        
-			<label>	<input type="radio" name="pregunta7" ng-model="user.pregu7" value="guemez"> guemez  </label><br/>
-			<label> <input type="radio" name="pregunta7" ng-model="user.pregu7" value="luis"> luis  </label><br/>
-			<label> <input type="radio" name="pregunta7" ng-model="user.pregu7" value="maik"> Maik  </label><br/>
-			
-							</div><!--final pregunta 7-->
-							<div class="cuestionario-pregunta8"><!--pregunta 8-->
-							<h4><strong>pregunta 8:</strong></h4>
-								<p>quien es el mas guapo:</p>
-        
-			<label>	<input type="radio" name="pregunta8" ng-model="user.pregu8" value="guemez"> guemez  </label><br/>
-			<label> <input type="radio" name="pregunta8" ng-model="user.pregu8" value="luis"> luis  </label><br/>
-			<label> <input type="radio" name="pregunta8" ng-model="user.pregu8" value="maik"> Maik  </label><br/>
-			
-							</div><!--final pregunta 8-->
-							<div class="cuestionario-pregunta9"><!--pregunta 9-->
-							<h4><strong>pregunta 9:</strong></h4>
-								<p>quien es el mas guapo:</p>
-        
-			<label>	<input type="radio" name="pregunta9" ng-model="user.pregu9" value="guemez"> guemez  </label><br/>
-			<label> <input type="radio" name="pregunta9" ng-model="user.pregu9" value="luis"> luis  </label><br/>
-			<label> <input type="radio" name="pregunta9" ng-model="user.pregu9" value="maik"> Maik  </label><br/>
-			
-							</div><!--final pregunta 9-->
-							<div class="cuestionario-pregunta10"><!--pregunta 10-->
-							<h4><strong>pregunta 10:</strong></h4>
-								<p>quien es el mas guapo:</p>
-        
-			<label>	<input type="radio" name="pregunta10" ng-model="user.pregu10" value="guemez"> guemez  </label><br/>
-			<label> <input type="radio" name="pregunta10" ng-model="user.pregu10" value="luis"> luis  </label><br/>
-			<label> <input type="radio" name="pregunta10" ng-model="user.pregu10" value="maik"> Maik  </label><br/>
-			
-							</div><!--final pregunta 10-->
+                        
+						<div class="row"><!-- Row pregunta7-->
+						 
+						 <div class="col-md-3 col-xs-3"><!-- col pregunta7 radio izquierdo-->
+						</br>
+					
+						<div class="preguntas1"><!-- Grupo 7-->
+		                <label class="label1" >Fuerza</label></br>						 
+						<label class="label2" >Liberal</label> </br>
+						<label class="label3" >Complaciente</label> </br>
+						<label class="label4" >Animoso</label>
+						</div>
+						<hr class="lineadiv"><!-- final Grupo 7-->
+					
+						 </div><!--  final col pregunta1 radio izquierdo-->
+						 <div class="col-md-4 col-xs-4"><!-- col pregunta7 radio izquierdo-->
+						<div class="radioizquierdo"><!-- comienzo Grupo 7-->
+		                    <h4 class="titumaspregu">Mas</h4>
+						   <input class="radiofuerzaizq" type="radio" name="pregunta7izq" ng-model="user.pregu7izq" value="guemez"></br>
+							<input class="radioliberalizq" type="radio" name="pregunta7izq" ng-model="user.pregu7izq" value="guemez"> </br>
+							<input class="radiocomplacienteizq" type="radio" name="pregunta7izq" ng-model="user.pregu7izq" value="guemez"></br>
+							<input class="radioanimosoizq" type="radio" name="pregunta7izq" ng-model="user.pregu7izq" value="guemez">
+						</div><!-- final Grupo 7-->
+						
+						 </div><!--  final col pregunta7 radio izquierdo-->
+						 
+						 <div class="col-md-3 col-xs-3"><!-- col pregunta7 radio derecho-->
+							<div class="radioderecho"><!-- Grupo 7-->
+							<h4 class="titumenospregu">Menos</h4> 
+							<input class="radiofuerzader" type="radio" name="pregunta7der" ng-model="user.pregu7der" value="guemez"></br>
+							<input class="radioliberalder" type="radio" name="pregunta7der" ng-model="user.pregu7der" value="guemez"> </br>
+							<input class="radiocomplacienteder" type="radio" name="pregunta7der" ng-model="user.pregu7der" value="guemez"></br>
+							<input class="radioanimosoder" type="radio" name="pregunta7der" ng-model="user.pregu7der" value="guemez">
+							</div>
+						 </div><!--  final col pregunta7 radio derecho-->
+						 
+						</div><!--final Row pregunta7-->
+						 
+						<div class="row"><!-- Row pregunta8-->
+						 
+						 <div class="col-md-3 col-xs-3"><!-- col pregunta8 radio izquierdo-->
+						</br>
+					
+						<div class="preguntas1"><!-- Grupo 8-->
+		                <label class="label1" >Confiado</label></br>						 
+						<label class="label2" >Simpatizador</label> </br>
+						<label class="label3" >Tolerante</label> </br>
+						<label class="label4" >Afirmativo</label>
+						</div>
+						<hr class="lineadiv"><!-- final Grupo 8-->
+					
+						 </div><!--  final col pregunta8 radio izquierdo-->
+						 <div class="col-md-4 col-xs-4"><!-- col pregunta8 radio izquierdo-->
+						<div class="radioizquierdo"><!-- comienzo Grupo 8-->
+		                    <h4 class="titumaspregu">Mas</h4>
+						   <input class="radioconfiadoizq" type="radio" name="pregunta8izq" ng-model="user.pregu8izq" value="guemez"></br>
+							<input class="radiosimpatizadorizq" type="radio" name="pregunta8izq" ng-model="user.pregu8izq" value="guemez"> </br>
+							<input class="radiotoleranteizq" type="radio" name="pregunta8izq" ng-model="user.pregu8izq" value="guemez"></br>
+							<input class="radioafirmativoizq" type="radio" name="pregunta8izq" ng-model="user.pregu8izq" value="guemez">
+						</div><!-- final Grupo 8-->
+						
+						 </div><!--  final col pregunta8 radio izquierdo-->
+						 
+						 <div class="col-md-3 col-xs-3"><!-- col pregunta8 radio derecho-->
+							<div class="radioderecho"><!-- Grupo 8-->
+							<h4 class="titumenospregu">Menos</h4> 
+							<input class="radioconfiadoder" type="radio" name="pregunta8der" ng-model="user.pregu8der" value="guemez"></br>
+							<input class="radiosimpatizadorder" type="radio" name="pregunta8der" ng-model="user.pregu8der" value="guemez"> </br>
+							<input class="radiotoleranteder" type="radio" name="pregunta8der" ng-model="user.pregu8der" value="guemez"></br>
+							<input class="radioafirmativoder" type="radio" name="pregunta8der" ng-model="user.pregu88der" value="guemez">
+							</div>
+						 </div><!--  final col pregunta8 radio derecho-->
+						 
+						</div><!--final Row pregunta8-->
+					<div class="row"><!-- Row pregunta9-->
+						 
+						 <div class="col-md-3 col-xs-3"><!-- col pregunta9 radio izquierdo-->
+						</br>
+					
+						<div class="preguntas1"><!-- Grupo 9-->
+		                <label class="label1" >Ecuánime</label></br>						 
+						<label class="label2" >Preciso</label> </br>
+						<label class="label3" >Nervioso</label> </br>
+						<label class="label4" >Jovial</label>
+						</div>
+						<hr class="lineadiv"><!-- final Grupo 9-->
+					
+						 </div><!--  final col pregunta9 radio izquierdo-->
+						 <div class="col-md-4 col-xs-4"><!-- col pregunta9 radio izquierdo-->
+						<div class="radioizquierdo"><!-- comienzo Grupo 9-->
+		                    <h4 class="titumaspregu">Mas</h4>
+						   <input class="radioecuanimeizq" type="radio" name="pregunta9izq" ng-model="user.pregu9izq" value="guemez"></br>
+							<input class="radioprecisoizq" type="radio" name="pregunta9izq" ng-model="user.pregu9izq" value="guemez"> </br>
+							<input class="radionerviosoizq" type="radio" name="pregunta9izq" ng-model="user.pregu9izq" value="guemez"></br>
+							<input class="radiojovializq" type="radio" name="pregunta9izq" ng-model="user.pregu9izq" value="guemez">
+						</div><!-- final Grupo 9-->
+						
+						 </div><!--  final col pregunta9 radio izquierdo-->
+						 
+						 <div class="col-md-3 col-xs-3"><!-- col pregunta9 radio derecho-->
+							<div class="radioderecho"><!-- Grupo 9-->
+							<h4 class="titumenospregu">Menos</h4> 
+							<input class="radioecuanimeder" type="radio" name="pregunta3der" ng-model="user.pregu3der" value="guemez"></br>
+							<input class="radioprecisoder" type="radio" name="pregunta3der" ng-model="user.pregu3der" value="guemez"> </br>
+							<input class="radionerviosoder" type="radio" name="pregunta3der" ng-model="user.pregu3der" value="guemez"></br>
+							<input class="radiojovialder" type="radio" name="pregunta3der" ng-model="user.pregu3der" value="guemez">
+							</div>
+						 </div><!--  final col pregunta9 radio derecho-->
+						 
+						</div><!--final Row pregunta9-->
+						 
+						 <div class="row"><!-- Row pregunta10-->
+						 
+						 <div class="col-md-3 col-xs-3"><!-- col pregunta10 radio izquierdo-->
+						</br>
+					
+						<div class="preguntas1"><!-- Grupo 10-->
+		                <label class="label1" >Disciplinado</label></br>						 
+						<label class="label2" >Generoso</label> </br>
+						<label class="label3" >Animoso</label> </br>
+						<label class="label4" >Persistente</label>
+						</div>
+						<hr class="lineadiv"><!-- final Grupo 10-->
+					
+						 </div><!--  final col pregunta10 radio izquierdo-->
+						 <div class="col-md-4 col-xs-4"><!-- col pregunta2 radio izquierdo-->
+						<div class="radioizquierdo"><!-- comienzo Grupo 10-->
+		                    <h4 class="titumaspregu">Mas</h4>
+						   <input class="radiodisciplinadoizq" type="radio" name="pregunta10izq" ng-model="user.pregu10izq" value="guemez"></br>
+							<input class="radiogenerosoizq" type="radio" name="pregunta10izq" ng-model="user.pregu10izq" value="guemez"> </br>
+							<input class="radioanimosoizq" type="radio" name="pregunta10izq" ng-model="user.pregu10izq" value="guemez"></br>
+							<input class="radiopersistenteizq" type="radio" name="pregunta10izq" ng-model="user.pregu10izq" value="guemez">
+						</div><!-- final Grupo 10-->
+						
+						 </div><!--  final col pregunta10 radio izquierdo-->
+						 
+						 <div class="col-md-3 col-xs-3"><!-- col pregunta10 radio derecho-->
+							<div class="radioderecho"><!-- Grupo 10-->
+							<h4 class="titumenospregu">Menos</h4> 
+							<input class="radiodisciplinadoder" type="radio" name="pregunta10der" ng-model="user.pregu10der" value="guemez"></br>
+							<input class="radiogenerosoder" type="radio" name="pregunta10der" ng-model="user.pregu10der" value="guemez"> </br>
+							<input class="radioanimosoder" type="radio" name="pregunta10der" ng-model="user.pregu10der" value="guemez"></br>
+							<input class="radiopersistenteder" type="radio" name="pregunta10der" ng-model="user.pregu10der" value="guemez">
+							</div>
+						 </div><!--  final col pregunta10 radio derecho-->
+						 
+						</div><!--final Row pregunta10-->
+						
+						<div class="row"><!-- Row pregunta11-->
+						 
+						 <div class="col-md-3 col-xs-3"><!-- col pregunta11 radio izquierdo-->
+						</br>
+					
+						<div class="preguntas1"><!-- Grupo 11-->
+		                <label class="label1" >Competitivo</label></br>						 
+						<label class="label2" >Alegre</label> </br>
+						<label class="label3" >Considerado</label> </br>
+						<label class="label4" >Armonioso</label>
+						</div>
+						<hr class="lineadiv"><!-- final Grupo 11-->
+					
+						 </div><!--  final col pregunta5 radio izquierdo-->
+						 <div class="col-md-4 col-xs-4"><!-- col pregunta5 radio izquierdo-->
+						<div class="radioizquierdo"><!-- comienzo Grupo 5-->
+		                    <h4 class="titumaspregu">Mas</h4>
+						   <input class="radiocompetitivoizq" type="radio" name="pregunta11izq" ng-model="user.pregu11izq" value="guemez"></br>
+							<input class="radioalegreizq" type="radio" name="pregunta11izq" ng-model="user.pregu11izq" value="guemez"> </br>
+							<input class="radioconsideradoizq" type="radio" name="pregunta11izq" ng-model="user.pregu11izq" value="guemez"></br>
+							<input class="radioarmoniosoizq" type="radio" name="pregunta11izq" ng-model="user.pregu11izq" value="guemez">
+						</div><!-- final Grupo 11-->
+						
+						 </div><!--  final col pregunta11 radio izquierdo-->
+						 
+						 <div class="col-md-3 col-xs-3"><!-- col pregunta11 radio derecho-->
+							<div class="radioderecho"><!-- Grupo 11-->
+							<h4 class="titumenospregu">Menos</h4> 
+							<input class="radiocompetivoder" type="radio" name="pregunta11der" ng-model="user.pregu11der" value="guemez"></br>
+							<input class="radioalegreder" type="radio" name="pregunta11der" ng-model="user.pregu11der" value="guemez"> </br>
+							<input class="radioconsideradoder" type="radio" name="pregunta11der" ng-model="user.pregu11der" value="guemez"></br>
+							<input class="radioarmoniosoder" type="radio" name="pregunta11der" ng-model="user.pregu11der" value="guemez">
+							</div>
+						 </div><!--  final col pregunta11 radio derecho-->
+						 
+						</div><!--final Row pregunta11-->
+						<div class="row"><!-- Row pregunta12-->
+						 
+						 <div class="col-md-3 col-xs-3"><!-- col pregunta12 radio izquierdo-->
+						</br>
+					
+						<div class="preguntas1"><!-- Grupo 12-->
+		                <label class="label1" >Admirable</label></br>						 
+						<label class="label2" >Bondadoso</label> </br>
+						<label class="label3" >Resignado</label> </br>
+						<label class="label4" >Firmeza</label>
+						</div>
+						<hr class="lineadiv"><!-- final Grupo 12-->
+					
+						 </div><!--  final col pregunta12 radio izquierdo-->
+						 <div class="col-md-4 col-xs-4"><!-- col pregunta12 radio izquierdo-->
+						<div class="radioizquierdo"><!-- comienzo Grupo 12-->
+		                    <h4 class="titumaspregu">Mas</h4>
+						   <input class="radioadmirableizq" type="radio" name="pregunta12izq" ng-model="user.pregu12izq" value="guemez"></br>
+							<input class="radiobondadosoizq" type="radio" name="pregunta12izq" ng-model="user.pregu12izq" value="guemez"> </br>
+							<input class="radioresignadoizq" type="radio" name="pregunta12izq" ng-model="user.pregu12izq" value="guemez"></br>
+							<input class="radiofirmezaizq" type="radio" name="pregunta12izq" ng-model="user.pregu12izq" value="guemez">
+						</div><!-- final Grupo 6-->
+						
+						 </div><!--  final col pregunta6 radio izquierdo-->
+						 
+						 <div class="col-md-3 col-xs-3"><!-- col pregunta6 radio derecho-->
+							<div class="radioderecho"><!-- Grupo 6-->
+							<h4 class="titumenospregu">Menos</h4> 
+							<input class="radioadmirableder" type="radio" name="pregunta12der" ng-model="user.pregu12der" value="guemez"></br>
+							<input class="radiobondadosoder" type="radio" name="pregunta12der" ng-model="user.pregu12der" value="guemez"> </br>
+							<input class="radioresignadoder" type="radio" name="pregunta12der" ng-model="user.pregu12der" value="guemez"></br>
+							<input class="radiofirmezader" type="radio" name="pregunta12der" ng-model="user.pregu12der" value="guemez">
+							</div>
+						 </div><!--  final col pregunta6 radio derecho-->
+						 
+						</div><!--final Row pregunta6-->
+						
+						
                             </div><!--Final tabla 2-->
 							
 							<div class="tab-pane" id="tabla-3"><!--Inicio tabla 3-->
-                               <div class="cuestionario-pregunta11"><!--pregunta 11-->
-							<h4><strong>pregunta 11:</strong></h4>
-								<p>quien es el mas guapo:</p>
-        
-			<label>	<input type="radio" name="pregunta11" ng-model="user.pregu11" value="guemez"> guemez  </label><br/>
-			<label> <input type="radio" name="pregunta11" ng-model="user.pregu11" value="luis"> luis  </label><br/>
-			<label> <input type="radio" name="pregunta11" ng-model="user.pregu11" value="maik"> Maik  </label><br/>
-			
-							</div><!--final pregunta 11-->
-							<div class="cuestionario-pregunta12"><!--pregunta 12-->
-							<h4><strong>pregunta 12:</strong></h4>
-								<p>quien es el mas guapo:</p>
-        
-			<label>	<input type="radio" name="pregunta12" ng-model="user.pregu12" value="guemez"> guemez  </label><br/>
-			<label> <input type="radio" name="pregunta12" ng-model="user.pregu12" value="luis"> luis  </label><br/>
-			<label> <input type="radio" name="pregunta12" ng-model="user.pregu12" value="maik"> Maik  </label><br/>
-			
-							</div><!--final pregunta 12-->
-							<div class="cuestionario-pregunta13"><!--pregunta 13-->
-							<h4><strong>pregunta 13:</strong></h4>
-								<p>quien es el mas guapo:</p>
-        
-			<label>	<input type="radio" name="pregunta13" ng-model="user.pregu13" value="guemez"> guemez  </label><br/>
-			<label> <input type="radio" name="pregunta13" ng-model="user.pregu13" value="luis"> luis  </label><br/>
-			<label> <input type="radio" name="pregunta13" ng-model="user.pregu13" value="maik"> Maik  </label><br/>
-			
-							</div><!--final pregunta 13-->
-							<div class="cuestionario-pregunta14"><!--pregunta 14-->
-							<h4><strong>pregunta 14:</strong></h4>
-								<p>quien es el mas guapo:</p>
-        
-			<label>	<input type="radio" name="pregunta14" ng-model="user.pregu14" value="guemez"> guemez  </label><br/>
-			<label> <input type="radio" name="pregunta14" ng-model="user.pregu14" value="luis"> luis  </label><br/>
-			<label> <input type="radio" name="pregunta14" ng-model="user.pregu14" value="maik"> Maik  </label><br/>
-			
-							</div><!--final pregunta 14-->
-							<div class="cuestionario-pregunta15"><!--pregunta 15-->
-							<h4><strong>pregunta 15:</strong></h4>
-								<p>quien es el mas guapo:</p>
-        
-			<label>	<input type="radio" name="pregunta15" ng-model="user.pregu15" value="guemez"> guemez  </label><br/>
-			<label> <input type="radio" name="pregunta15" ng-model="user.pregu15" value="luis"> luis  </label><br/>
-			<label> <input type="radio" name="pregunta15" ng-model="user.pregu15" value="maik"> Maik  </label><br/>
-			
-							</div><!--final pregunta 15-->
+                               
+							   
+							   <div class="row"><!-- Row pregunta13-->
+						 
+						 <div class="col-md-3 col-xs-3"><!-- col pregunta13 radio izquierdo-->
+						</br>
+					
+						<div class="preguntas1"><!-- Grupo 13-->
+		                <label class="label1" >Respetuoso</label></br>						 
+						<label class="label2" >Emprendedor</label> </br>
+						<label class="label3" >Optimista</label> </br>
+						<label class="label4" >Servicial</label>
+						</div>
+						<hr class="lineadiv"><!-- final Grupo 13-->
+					
+						 </div><!--  final col pregunta13 radio izquierdo-->
+						 <div class="col-md-4 col-xs-4"><!-- col pregunta13 radio izquierdo-->
+						<div class="radioizquierdo"><!-- comienzo Grupo 13-->
+		                    <h4 class="titumaspregu">Mas</h4>
+						   <input class="radiorespetuosoizq" type="radio" name="pregunta13izq" ng-model="user.pregu13izq" value="guemez"></br>
+							<input class="radioemprendedorizq" type="radio" name="pregunta13izq" ng-model="user.pregu13izq" value="guemez"> </br>
+							<input class="radiooptimistaizq" type="radio" name="pregunta13izq" ng-model="user.pregu13izq" value="guemez"></br>
+							<input class="radioservicializq" type="radio" name="pregunta13izq" ng-model="user.pregu13izq" value="guemez">
+						</div><!-- final Grupo 1-->
+						
+						 </div><!--  final col pregunta1 radio izquierdo-->
+						 
+						 <div class="col-md-3 col-xs-3"><!-- col pregunta1 radio derecho-->
+							<div class="radioderecho"><!-- Grupo 2-->
+							<h4 class="titumenospregu">Menos</h4> 
+							<input class="radiorespetuosoder" type="radio" name="pregunta13der" ng-model="user.pregu13der" value="guemez"></br>
+							<input class="radioemprendedorder" type="radio" name="pregunta13der" ng-model="user.pregu13der" value="guemez"> </br>
+							<input class="radiooptimistader" type="radio" name="pregunta13der" ng-model="user.pregu13der" value="guemez"></br>
+							<input class="radioservicialder" type="radio" name="pregunta13der" ng-model="user.pregu13der" value="guemez">
+							</div>
+						 </div><!--  final col pregunta13 radio derecho-->
+						 
+						</div><!--final Row pregunta13-->
+						 
+						<div class="row"><!-- Row pregunta14-->
+						 
+						 <div class="col-md-3 col-xs-3"><!-- col pregunta14 radio izquierdo-->
+						</br>
+					
+						<div class="preguntas1"><!-- Grupo 14-->
+		                <label class="label1" >Valiente</label></br>						 
+						<label class="label2" >Inspirador</label> </br>
+						<label class="label3" >Sumiso</label> </br>
+						<label class="label4" >Tímido</label>
+						</div>
+						<hr class="lineadiv"><!-- final Grupo 14-->
+					
+						 </div><!--  final col pregunta14 radio izquierdo-->
+						 <div class="col-md-4 col-xs-4"><!-- col pregunta14 radio izquierdo-->
+						<div class="radioizquierdo"><!-- comienzo Grupo 14-->
+		                    <h4 class="titumaspregu">Mas</h4>
+						   <input class="radiovalienteizq" type="radio" name="pregunta14izq" ng-model="user.pregu14izq" value="guemez"></br>
+							<input class="radioinspiradorizq" type="radio" name="pregunta14izq" ng-model="user.pregu14izq" value="guemez"> </br>
+							<input class="radiosumisoizq" type="radio" name="pregunta14izq" ng-model="user.pregu14izq" value="guemez"></br>
+							<input class="radiotimidoizq" type="radio" name="pregunta14izq" ng-model="user.pregu14izq" value="guemez">
+						</div><!-- final Grupo 14-->
+						
+						 </div><!--  final col pregunta14 radio izquierdo-->
+						 
+						 <div class="col-md-3 col-xs-3"><!-- col pregunta14 radio derecho-->
+							<div class="radioderecho"><!-- Grupo 14-->
+							<h4 class="titumenospregu">Menos</h4> 
+							<input class="radiovalienteder" type="radio" name="pregunta14der" ng-model="user.pregu14der" value="guemez"></br>
+							<input class="radioinspiradorder" type="radio" name="pregunta14der" ng-model="user.pregu14der" value="guemez"> </br>
+							<input class="radiosumisoder" type="radio" name="pregunta14der" ng-model="user.pregu14der" value="guemez"></br>
+							<input class="radiotimidoder" type="radio" name="pregunta14der" ng-model="user.pregu14der" value="guemez">
+							</div>
+						 </div><!--  final col pregunta14 radio derecho-->
+						 
+						</div><!--final Row pregunta14-->
+					<div class="row"><!-- Row pregunta15-->
+						 
+						 <div class="col-md-3 col-xs-3"><!-- col pregunta15 radio izquierdo-->
+						</br>
+					
+						<div class="preguntas1"><!-- Grupo 15-->
+		                <label class="label1" >Adaptable</label></br>						 
+						<label class="label2" >Disputador</label> </br>
+						<label class="label3" >Indifente</label> </br>
+						<label class="label4" >Alivianado</label>
+						</div>
+						<hr class="lineadiv"><!-- final Grupo 15-->
+					
+						 </div><!--  final col pregunta15 radio izquierdo-->
+						 <div class="col-md-4 col-xs-4"><!-- col pregunta15 radio izquierdo-->
+						<div class="radioizquierdo"><!-- comienzo Grupo 15-->
+		                    <h4 class="titumaspregu">Mas</h4>
+						   <input class="radioadaptableizq" type="radio" name="pregunta15izq" ng-model="user.pregu15izq" value="guemez"></br>
+							<input class="radiodisputadorizq" type="radio" name="pregunta15izq" ng-model="user.pregu15izq" value="guemez"> </br>
+							<input class="radioindiferenteizq" type="radio" name="pregunta15izq" ng-model="user.pregu15izq" value="guemez"></br>
+							<input class="radioalivianadoizq" type="radio" name="pregunta15izq" ng-model="user.pregu15izq" value="guemez">
+						</div><!-- final Grupo 15-->
+						
+						 </div><!--  final col pregunta15 radio izquierdo-->
+						 
+						 <div class="col-md-3 col-xs-3"><!-- col pregunta15 radio derecho-->
+							<div class="radioderecho"><!-- Grupo 15-->
+							<h4 class="titumenospregu">Menos</h4> 
+							<input class="radioadaptableder" type="radio" name="pregunta15der" ng-model="user.pregu15der" value="guemez"></br>
+							<input class="radiodispuradorder" type="radio" name="pregunta15der" ng-model="user.pregu15der" value="guemez"> </br>
+							<input class="radioindiferenteder" type="radio" name="pregunta15der" ng-model="user.pregu15der" value="guemez"></br>
+							<input class="radioalivianadoder" type="radio" name="pregunta15der" ng-model="user.pregu15der" value="guemez">
+							</div>
+						 </div><!--  final col pregunta15 radio derecho-->
+						 
+						</div><!--final Row pregunta15-->
+						 
+						 <div class="row"><!-- Row pregunta16-->
+						 
+						 <div class="col-md-3 col-xs-3"><!-- col pregunta16 radio izquierdo-->
+						</br>
+					
+						<div class="preguntas1"><!-- Grupo 16-->
+		                <label class="label1" >Amiguero</label></br>						 
+						<label class="label2" >Paciente</label> </br>
+						<label class="label3" >Confiado</label> </br>
+						<label class="label4" >Hablador</label>
+						</div>
+						<hr class="lineadiv"><!-- final Grupo 16-->
+					
+						 </div><!--  final col pregunta16 radio izquierdo-->
+						 <div class="col-md-4 col-xs-4"><!-- col pregunta16 radio izquierdo-->
+						<div class="radioizquierdo"><!-- comienzo Grupo 16-->
+		                    <h4 class="titumaspregu">Mas</h4>
+						   <input class="radioamigueroizq" type="radio" name="pregunta16izq" ng-model="user.pregu16izq" value="guemez"></br>
+							<input class="radiopacienteizq" type="radio" name="pregunta16izq" ng-model="user.pregu16izq" value="guemez"> </br>
+							<input class="radioconfiadoizq" type="radio" name="pregunta16izq" ng-model="user.pregu16izq" value="guemez"></br>
+							<input class="radiohabladorizq" type="radio" name="pregunta16izq" ng-model="user.pregu16izq" value="guemez">
+						</div><!-- final Grupo 16-->
+						
+						 </div><!--  final col pregunta16 radio izquierdo-->
+						 
+						 <div class="col-md-3 col-xs-3"><!-- col pregunta16 radio derecho-->
+							<div class="radioderecho"><!-- Grupo 16-->
+							<h4 class="titumenospregu">Menos</h4> 
+							<input class="radioamigueroder" type="radio" name="pregunta16der" ng-model="user.pregu16der" value="guemez"></br>
+							<input class="radiopacienteder" type="radio" name="pregunta16der" ng-model="user.pregu16der" value="guemez"> </br>
+							<input class="radioconfiadoder" type="radio" name="pregunta16der" ng-model="user.pregu16der" value="guemez"></br>
+							<input class="radiohabladorder" type="radio" name="pregunta16der" ng-model="user.pregu16der" value="guemez">
+							</div>
+						 </div><!--  final col pregunta16 radio derecho-->
+						 
+						</div><!--final Row pregunta16-->
+						
+						<div class="row"><!-- Row pregunta17-->
+						 
+						 <div class="col-md-3 col-xs-3"><!-- col pregunta17 radio izquierdo-->
+						</br>
+					
+						<div class="preguntas1"><!-- Grupo 17-->
+		                <label class="label1" >Conforme</label></br>						 
+						<label class="label2" >Confiable</label> </br>
+						<label class="label3" >Pacifico</label> </br>
+						<label class="label4" >Positivo</label>
+						</div>
+						<hr class="lineadiv"><!-- final Grupo 17-->
+					
+						 </div><!--  final col pregunta17 radio izquierdo-->
+						 <div class="col-md-4 col-xs-4"><!-- col pregunta17 radio izquierdo-->
+						<div class="radioizquierdo"><!-- comienzo Grupo 17-->
+		                    <h4 class="titumaspregu">Mas</h4>
+						   <input class="radioconformeizq" type="radio" name="pregunta5izq" ng-model="user.pregu5izq" value="guemez"></br>
+							<input class="radioconfiableizq" type="radio" name="pregunta5izq" ng-model="user.pregu5izq" value="guemez"> </br>
+							<input class="radiopacificoizq" type="radio" name="pregunta5izq" ng-model="user.pregu5izq" value="guemez"></br>
+							<input class="radiopositivoizq" type="radio" name="pregunta5izq" ng-model="user.pregu5izq" value="guemez">
+						</div><!-- final Grupo 17-->
+						
+						 </div><!--  final col pregunta17 radio izquierdo-->
+						 
+						 <div class="col-md-3 col-xs-3"><!-- col pregunta17 radio derecho-->
+							<div class="radioderecho"><!-- Grupo 17-->
+							<h4 class="titumenospregu">Menos</h4> 
+							<input class="radiodocilder" type="radio" name="pregunta5der" ng-model="user.pregu5der" value="guemez"></br>
+							<input class="radioatrevidoder" type="radio" name="pregunta5der" ng-model="user.pregu5der" value="guemez"> </br>
+							<input class="radiolealder" type="radio" name="pregunta5der" ng-model="user.pregu5der" value="guemez"></br>
+							<input class="radioencantadorder" type="radio" name="pregunta5der" ng-model="user.pregu5der" value="guemez">
+							</div>
+						 </div><!--  final col pregunta17 radio derecho-->
+						 
+						</div><!--final Row pregunta17-->
+						<div class="row"><!-- Row pregunta18-->
+						 
+						 <div class="col-md-3 col-xs-3"><!-- col pregunta18 radio izquierdo-->
+						</br>
+					
+						<div class="preguntas1"><!-- Grupo 18-->
+		                <label class="label1" >Dispuesto</label></br>						 
+						<label class="label2" >Deseoso</label> </br>
+						<label class="label3" >Consecuente</label> </br>
+						<label class="label4" >Entusiasta</label>
+						</div>
+						<hr class="lineadiv"><!-- final Grupo 18-->
+					
+						 </div><!--  final col pregunta18 radio izquierdo-->
+						 <div class="col-md-4 col-xs-4"><!-- col pregunta18 radio izquierdo-->
+						<div class="radioizquierdo"><!-- comienzo Grupo 18-->
+		                    <h4 class="titumaspregu">Mas</h4>
+						   <input class="radioobedienteizq" type="radio" name="pregunta18izq" ng-model="user.pregu18izq" value="guemez"></br>
+							<input class="radioquisquillosoizq" type="radio" name="pregunta18izq" ng-model="user.pregu18izq" value="guemez"> </br>
+							<input class="radioinconquistableizq" type="radio" name="pregunta18izq" ng-model="user.pregu18izq" value="guemez"></br>
+							<input class="radiojuguetonizq" type="radio" name="pregunta18izq" ng-model="user.pregu18izq" value="guemez">
+						</div><!-- final Grupo 18-->
+						
+						 </div><!--  final col pregunta18 radio izquierdo-->
+						 
+						 <div class="col-md-3 col-xs-3"><!-- col pregunta18 radio derecho-->
+							<div class="radioderecho"><!-- Grupo 18-->
+							<h4 class="titumenospregu">Menos</h4> 
+							<input class="radioobedienteder" type="radio" name="pregunta18der" ng-model="user.pregu18der" value="guemez"></br>
+							<input class="radioquisquillosoder" type="radio" name="pregunta18der" ng-model="user.pregu18der" value="guemez"> </br>
+							<input class="radioinconquistableder" type="radio" name="pregunta18der" ng-model="user.pregu18der" value="guemez"></br>
+							<input class="radiojuguetonder" type="radio" name="pregunta18der" ng-model="user.pregu18der" value="guemez">
+							</div>
+						 </div><!--  final col pregunta18 radio derecho-->
+						 
+						</div><!--final Row pregunta18-->
+						
+							   
+							   
+							   
                             </div><!--Final tabla 3-->
+								
+								
 							
-								<div class="tab-pane" id="tabla-4"><!--Inicio tabla 4-->
-                               <div class="cuestionario-pregunta16"><!--pregunta 16-->
-							<h4><strong>pregunta 16:</strong></h4>
-								<p>quien es el mas guapo:</p>
-        
-			<label>	<input type="radio" name="pregunta16" ng-model="user.pregu16" value="guemez"> guemez  </label><br/>
-			<label> <input type="radio" name="pregunta16" ng-model="user.pregu16" value="luis"> luis  </label><br/>
-			<label> <input type="radio" name="pregunta16" ng-model="user.pregu16" value="maik"> Maik  </label><br/>
-			
-							</div><!--final pregunta 16-->
-							<div class="cuestionario-pregunta17"><!--pregunta 17-->
-							<h4><strong>pregunta 17:</strong></h4>
-								<p>quien es el mas guapo:</p>
-        
-			<label>	<input type="radio" name="pregunta17" ng-model="user.pregu17" value="guemez"> guemez  </label><br/>
-			<label> <input type="radio" name="pregunta17" ng-model="user.pregu17" value="luis"> luis  </label><br/>
-			<label> <input type="radio" name="pregunta17" ng-model="user.pregu17" value="maik"> Maik  </label><br/>
-			
-							</div><!--final pregunta 17-->
-							<div class="cuestionario-pregunta18"><!--pregunta 18-->
-							<h4><strong>pregunta 18:</strong></h4>
-								<p>quien es el mas guapo:</p>
-        
-			<label>	<input type="radio" name="pregunta18" ng-model="user.pregu18" value="guemez"> guemez  </label><br/>
-			<label> <input type="radio" name="pregunta18" ng-model="user.pregu18" value="luis"> luis  </label><br/>
-			<label> <input type="radio" name="pregunta18" ng-model="user.pregu18" value="maik"> Maik  </label><br/>
-			
-							</div><!--final pregunta 18-->
-							<div class="cuestionario-pregunta19"><!--pregunta 19-->
-							<h4><strong>pregunta 19:</strong></h4>
-								<p>quien es el mas guapo:</p>
-        
-			<label>	<input type="radio" name="pregunta19" ng-model="user.pregu19" value="guemez"> guemez  </label><br/>
-			<label> <input type="radio" name="pregunta19" ng-model="user.pregu19" value="luis"> luis  </label><br/>
-			<label> <input type="radio" name="pregunta19" ng-model="user.pregu19" value="maik"> Maik  </label><br/>
-			
-							</div><!--final pregunta 19-->
-							<div class="cuestionario-pregunta20"><!--pregunta 20-->
-							<h4><strong>pregunta 20:</strong></h4>
-								<p>quien es el mas guapo:</p>
-        
-			<label>	<input type="radio" name="pregunta20" ng-model="user.pregu20" value="guemez"> guemez  </label><br/>
-			<label> <input type="radio" name="pregunta20" ng-model="user.pregu20" value="luis"> luis  </label><br/>
-			<label> <input type="radio" name="pregunta20" ng-model="user.pregu20" value="maik"> Maik  </label><br/>
-			
-							</div><!--final pregunta 20-->
-                            </div><!--final tabla 4-->
-								<div class="tab-pane" id="tabla-5"><!--Inicio tabla 5-->
-                               <div class="cuestionario-pregunta21"><!--pregunta 21-->
-							<h4><strong>pregunta 21:</strong></h4>
-								<p>quien es el mas guapo:</p>
-        
-			<label>	<input type="radio" name="pregunta21" ng-model="user.pregu21" value="guemez"> guemez  </label><br/>
-			<label> <input type="radio" name="pregunta21" ng-model="user.pregu21" value="luis"> luis  </label><br/>
-			<label> <input type="radio" name="pregunta21" ng-model="user.pregu21" value="maik"> Maik  </label><br/>
-			
-							</div><!--final pregunta 21-->
+                            <div class="tab-pane" id="tabla-4"><!--Inicio tabla final-->
+                            
+							<div class="row"><!-- Row pregunta19-->
+						 
+						 <div class="col-md-3 col-xs-3"><!-- col pregunta1 radio izquierdo-->
+						</br>
+					
+						<div class="preguntas1"><!-- Grupo 19-->
+		                <label class="label1" >Aventurero</label></br>						 
+						<label class="label2" >Receptivo</label> </br>
+						<label class="label3" >Cordial</label> </br>
+						<label class="label4" >Moderado</label>
+						</div>
+						<hr class="lineadiv"><!-- final Grupo 19-->
+					
+						 </div><!--  final col pregunta19 radio izquierdo-->
+						 <div class="col-md-4 col-xs-4"><!-- col pregunta19 radio izquierdo-->
+						<div class="radioizquierdo"><!-- comienzo Grupo 19-->
+		                    <h4 class="titumaspregu">Mas</h4>
+						   <input class="radioaventureroizq" type="radio" name="pregunta19izq" ng-model="user.pregu19izq" value="guemez"></br>
+							<input class="radioreceptivoizq" type="radio" name="pregunta19izq" ng-model="user.pregu19izq" value="guemez"> </br>
+							<input class="radiocordializq" type="radio" name="pregunta19izq" ng-model="user.pregu19izq" value="guemez"></br>
+							<input class="radiomoderadoizq" type="radio" name="pregunta19izq" ng-model="user.pregu19izq" value="guemez">
+						</div><!-- final Grupo 19-->
+						
+						 </div><!--  final col pregunta19 radio izquierdo-->
+						 
+						 <div class="col-md-3 col-xs-3"><!-- col pregunta19 radio derecho-->
+							<div class="radioderecho"><!-- Grupo 19-->
+							<h4 class="titumenospregu">Menos</h4> 
+							<input class="radioaventureroder" type="radio" name="pregunta19der" ng-model="user.pregu19der" value="guemez"></br>
+							<input class="radioreceptivoder" type="radio" name="pregunta19der" ng-model="user.pregu19der" value="guemez"> </br>
+							<input class="radiocordialder" type="radio" name="pregunta19der" ng-model="user.pregu19der" value="guemez"></br>
+							<input class="radiomoderadoder" type="radio" name="pregunta19der" ng-model="user.pregu19der" value="guemez">
+							</div>
+						 </div><!--  final col pregunta19 radio derecho-->
+						 
+						</div><!--final Row pregunta19-->
+						 
+						<div class="row"><!-- Row pregunta20-->
+						 
+						 <div class="col-md-3 col-xs-3"><!-- col pregunta20 radio izquierdo-->
+						</br>
+					
+						<div class="preguntas1"><!-- Grupo 20-->
+		                <label class="label1" >Indulgente</label></br>						 
+						<label class="label2" >Esteta</label> </br>
+						<label class="label3" >Vigoroso</label> </br>
+						<label class="label4" >Sociable</label>
+						</div>
+						<hr class="lineadiv"><!-- final Grupo 20-->
+					
+						 </div><!--  final col pregunta20 radio izquierdo-->
+						 <div class="col-md-4 col-xs-4"><!-- col pregunta20 radio izquierdo-->
+						<div class="radioizquierdo"><!-- comienzo Grupo 20-->
+		                    <h4 class="titumaspregu">Mas</h4>
+						   <input class="radioindulgenteizq" type="radio" name="pregunta20izq" ng-model="user.pregu20izq" value="guemez"></br>
+							<input class="radioestetaizq" type="radio" name="pregunta20izq" ng-model="user.pregu20izq" value="guemez"> </br>
+							<input class="radiovigorosoizq" type="radio" name="pregunta20izq" ng-model="user.pregu20izq" value="guemez"></br>
+							<input class="radiosociableizq" type="radio" name="pregunta20izq" ng-model="user.pregu20izq" value="guemez">
+						</div><!-- final Grupo 20-->
+						
+						 </div><!--  final col pregunta20 radio izquierdo-->
+						 
+						 <div class="col-md-3 col-xs-3"><!-- col pregunta20 radio derecho-->
+							<div class="radioderecho"><!-- Grupo 20-->
+							<h4 class="titumenospregu">Menos</h4> 
+							<input class="radioindulgenteder" type="radio" name="pregunta20der" ng-model="user.pregu20der" value="guemez"></br>
+							<input class="radioestetader" type="radio" name="pregunta20der" ng-model="user.pregu20der" value="guemez"> </br>
+							<input class="radiovigorosoder" type="radio" name="pregunta20der" ng-model="user.pregu20der" value="guemez"></br>
+							<input class="radiosociableder" type="radio" name="pregunta1der" ng-model="user.pregu1der" value="guemez">
+							</div>
+						 </div><!--  final col pregunta20 radio derecho-->
+						 
+						</div><!--final Row pregunta20-->
+					<div class="row"><!-- Row pregunta21-->
+						 
+						 <div class="col-md-3 col-xs-3"><!-- col pregunta21 radio izquierdo-->
+						</br>
+					
+						<div class="preguntas1"><!-- Grupo 21-->
+		                <label class="label1" >Parlanchín</label></br>						 
+						<label class="label2" >Controlado</label> </br>
+						<label class="label3" >Convencional</label> </br>
+						<label class="label4" >Decisivo</label>
+						</div>
+						<hr class="lineadiv"><!-- final Grupo 21-->
+					
+						 </div><!--  final co2l pregunta3 radio izquierdo-->
+						 <div class="col-md-4 col-xs-4"><!-- col pregunta21 radio izquierdo-->
+						<div class="radioizquierdo"><!-- comienzo Grupo 21-->
+		                    <h4 class="titumaspregu">Mas</h4>
+						   <input class="radioparlanchinizq" type="radio" name="pregunta21izq" ng-model="user.pregu21izq" value="guemez"></br>
+							<input class="radiocontroladoizq" type="radio" name="pregunta21izq" ng-model="user.pregu21izq" value="guemez"> </br>
+							<input class="radioconvencionalizq" type="radio" name="pregunta21izq" ng-model="user.pregu21izq" value="guemez"></br>
+							<input class="radiodecisivoizq" type="radio" name="pregunta21izq" ng-model="user.pregu21izq" value="guemez">
+						</div><!-- final Grupo 21-->
+						
+						 </div><!--  final col pregunta21 radio izquierdo-->
+						 
+						 <div class="col-md-3 col-xs-3"><!-- col pregunta21 radio derecho-->
+							<div class="radioderecho"><!-- Grupo 21-->
+							<h4 class="titumenospregu">Menos</h4> 
+							<input class="radioparlanchinder" type="radio" name="pregunta21der" ng-model="user.pregu21der" value="guemez"></br>
+							<input class="radiocontroladoder" type="radio" name="pregunta21der" ng-model="user.pregu21der" value="guemez"> </br>
+							<input class="radioconvencionalder" type="radio" name="pregunta21der" ng-model="user.pregu21der" value="guemez"></br>
+							<input class="radiodecisivoder" type="radio" name="pregunta21der" ng-model="user.pregu21der" value="guemez">
+							</div>
+						 </div><!--  final col pregunta21 radio derecho-->
+						 
+						</div><!--final Row pregunta21-->
+						 
+						 <div class="row"><!-- Row pregunta22-->
+						 
+						 <div class="col-md-3 col-xs-3"><!-- col pregunta22 radio izquierdo-->
+						</br>
+					
+						<div class="preguntas1"><!-- Grupo 22-->
+		                <label class="label1" >Cohibido</label></br>						 
+						<label class="label2" >Exacto</label> </br>
+						<label class="label3" >Franco</label> </br>
+						<label class="label4" >Compañerismo</label>
+						</div>
+						<hr class="lineadiv"><!-- final Grupo 22-->
+					
+						 </div><!--  final col pregunta22 radio izquierdo-->
+						 <div class="col-md-4 col-xs-4"><!-- col pregunta22 radio izquierdo-->
+						<div class="radioizquierdo"><!-- comienzo Grupo 22-->
+		                    <h4 class="titumaspregu">Mas</h4>
+						   <input class="radiocohibidoizq" type="radio" name="pregunta22izq" ng-model="user.pregu22izq" value="guemez"></br>
+							<input class="radioexactoizq" type="radio" name="pregunta22izq" ng-model="user.pregu22izq" value="guemez"> </br>
+							<input class="radiofrancoizq" type="radio" name="pregunta22izq" ng-model="user.pregu22izq" value="guemez"></br>
+							<input class="radiocompañerismoizq" type="radio" name="pregunta22izq" ng-model="user.pregu22izq" value="guemez">
+						</div><!-- final Grupo 22-->
+						
+						 </div><!--  final col pregunta22 radio izquierdo-->
+						 
+						 <div class="col-md-3 col-xs-3"><!-- col pregunta22 radio derecho-->
+							<div class="radioderecho"><!-- Grupo 22-->
+							<h4 class="titumenospregu">Menos</h4> 
+							<input class="radiocohibidoder" type="radio" name="pregunta22der" ng-model="user.pregu22der" value="guemez"></br>
+							<input class="radioexactoder" type="radio" name="pregunta22der" ng-model="user.pregu22der" value="guemez"> </br>
+							<input class="radiofrancoder" type="radio" name="pregunta22der" ng-model="user.pregu22der" value="guemez"></br>
+							<input class="radiocompañerismoder" type="radio" name="pregunta22der" ng-model="user.pregu22der" value="guemez">
+							</div>
+						 </div><!--  final col pregunta22 radio derecho-->
+						 
+						</div><!--final Row pregunta22-->
+						
+						<div class="row"><!-- Row pregunta23-->
+						 
+						 <div class="col-md-3 col-xs-3"><!-- col pregunta5 radio izquierdo-->
+						</br>
+					
+						<div class="preguntas1"><!-- Grupo 23-->
+		                <label class="label1" >Diplomático</label></br>						 
+						<label class="label2" >Audaz</label> </br>
+						<label class="label3" >Refinado</label> </br>
+						<label class="label4" >Satisfecho</label>
+						</div>
+						<hr class="lineadiv"><!-- final Grupo 23-->
+					
+						 </div><!--  final col pregunta23 radio izquierdo-->
+						 <div class="col-md-4 col-xs-4"><!-- col pregunta23 radio izquierdo-->
+						<div class="radioizquierdo"><!-- comienzo Grupo 23-->
+		                    <h4 class="titumaspregu">Mas</h4>
+						   <input class="radiodiplomaticoizq" type="radio" name="pregunta23izq" ng-model="user.pregu23izq" value="guemez"></br>
+							<input class="radioaudazizq" type="radio" name="pregunta23izq" ng-model="user.pregu23izq" value="guemez"> </br>
+							<input class="radiorefinadoizq" type="radio" name="pregunta23izq" ng-model="user.pregu23izq" value="guemez"></br>
+							<input class="radiosatisfechoizq" type="radio" name="pregunta23izq" ng-model="user.pregu23izq" value="guemez">
+						</div><!-- final Grupo 23-->
+						
+						 </div><!--  final col pregunta5 radio izquierdo-->
+						 
+						 <div class="col-md-3 col-xs-3"><!-- col pregunta5 radio derecho-->
+							<div class="radioderecho"><!-- Grupo 5-->
+							<h4 class="titumenospregu">Menos</h4> 
+							<input class="radiodiplomaticoder" type="radio" name="pregunta23der" ng-model="user.pregu23der" value="guemez"></br>
+							<input class="radioaudazder" type="radio" name="pregunta23der" ng-model="user.pregu23der" value="guemez"> </br>
+							<input class="radiorefinadoder" type="radio" name="pregunta23der" ng-model="user.pregu23der" value="guemez"></br>
+							<input class="radiosatisfechoder" type="radio" name="pregunta23der" ng-model="user.pregu23der" value="guemez">
+							</div>
+						 </div><!--  final col pregunta23 radio derecho-->
+						 
+						</div><!--final Row pregunta23-->
+						
+						
 							
-							<div class="cuestionario-pregunta22"><!--pregunta 22-->
-							<h4><strong>pregunta 22:</strong></h4>
-								<p>quien es el mas guapo:</p>
-        
-			<label>	<input type="radio" name="pregunta22" ng-model="user.pregu22" value="guemez"> guemez  </label><br/>
-			<label> <input type="radio" name="pregunta22" ng-model="user.pregu22" value="luis"> luis  </label><br/>
-			<label> <input type="radio" name="pregunta22" ng-model="user.pregu22" value="maik"> Maik  </label><br/>
-			
-							</div><!--final pregunta 22-->
-							<div class="cuestionario-pregunta23"><!--pregunta 23-->
-							<h4><strong>pregunta 23:</strong></h4>
-								<p>quien es el mas guapo:</p>
-        
-			<label>	<input type="radio" name="pregunta23" ng-model="user.pregu23" value="guemez"> guemez  </label><br/>
-			<label> <input type="radio" name="pregunta23" ng-model="user.pregu23" value="luis"> luis  </label><br/>
-			<label> <input type="radio" name="pregunta23" ng-model="user.pregu23" value="maik"> Maik  </label><br/>
-			
-							</div><!--final pregunta 23-->
-							<div class="cuestionario-pregunta24"><!--pregunta 24-->
-							<h4><strong>pregunta 24:</strong></h4>
-								<p>quien es el mas guapo:</p>
-        
-			<label>	<input type="radio" name="pregunta24" ng-model="user.pregu24" value="guemez"> guemez  </label><br/>
-			<label> <input type="radio" name="pregunta24" ng-model="user.pregu24" value="luis"> luis  </label><br/>
-			<label> <input type="radio" name="pregunta24" ng-model="user.pregu24" value="maik"> Maik  </label><br/>
-			
-							</div><!--final pregunta 24-->
-							<div class="cuestionario-pregunta25"><!--pregunta 25-->
-							<h4><strong>pregunta 25:</strong></h4>
-								<p>quien es el mas guapo:</p>
-        
-			<label>	<input type="radio" name="pregunta25" ng-model="user.pregu25" value="guemez"> guemez  </label><br/>
-			<label> <input type="radio" name="pregunta25" ng-model="user.pregu25" value="luis"> luis  </label><br/>
-			<label> <input type="radio" name="pregunta25" ng-model="user.pregu25" value="maik"> Maik  </label><br/>
-			
-							</div><!--final pregunta 25-->							
-                            </div><!--Final tabla 5-->
-							
-							
-                            <div class="tab-pane" id="tabla-6"><!--Inicio tabla final-->
-                                <div class="cuestionario-pregunta26"><!--pregunta 26-->
-							<h4><strong>pregunta 26:</strong></h4>
-								<p>quien es el mas guapo:</p>
-        
-			<label>	<input type="radio" name="pregunta26" ng-model="user.pregu26" value="guemez"> guemez  </label><br/>
-			<label> <input type="radio" name="pregunta26" ng-model="user.pregu26" value="luis"> luis  </label><br/>
-			<label> <input type="radio" name="pregunta26" ng-model="user.pregu26" value="maik"> Maik  </label><br/>
-			
-							</div><!--final pregunta 26-->
-							<div class="cuestionario-pregunta27"><!--pregunta 27-->
-							<h4><strong>pregunta 27:</strong></h4>
-								<p>quien es el mas guapo:</p>
-        
-			<label>	<input type="radio" name="pregunta27" ng-model="user.pregu27" value="guemez"> guemez  </label><br/>
-			<label> <input type="radio" name="pregunta27" ng-model="user.pregu27" value="luis"> luis  </label><br/>
-			<label> <input type="radio" name="pregunta27" ng-model="user.pregu27" value="maik"> Maik  </label><br/>
-			
-							</div><!--final pregunta 27-->
-							<div class="cuestionario-pregunta28"><!--pregunta 28-->
-							<h4><strong>pregunta 28:</strong></h4>
-								<p>quien es el mas guapo:</p>
-        
-			<label>	<input type="radio" name="pregunta28" ng-model="user.pregu28" value="guemez"> guemez  </label><br/>
-			<label> <input type="radio" name="pregunta28" ng-model="user.pregu28" value="luis"> luis  </label><br/>
-			<label> <input type="radio" name="pregunta28" ng-model="user.pregu28" value="maik"> Maik  </label><br/>
-			
-							</div><!--final pregunta 28-->
-							<div class="cuestionario-pregunta29"><!--pregunta 29-->
-							<h4><strong>pregunta 29:</strong></h4>
-								<p>quien es el mas guapo:</p>
-        
-			<label>	<input type="radio" name="pregunta29" ng-model="user.pregu29" value="guemez"> guemez  </label><br/>
-			<label> <input type="radio" name="pregunta29" ng-model="user.pregu29" value="luis"> luis  </label><br/>
-			<label> <input type="radio" name="pregunta29" ng-model="user.pregu29" value="maik"> Maik  </label><br/>
-			
-							</div><!--final pregunta 29-->
-							<div class="cuestionario-pregunta30"><!--pregunta 30-->
-							<h4><strong>pregunta 30:</strong></h4>
-								<p>quien es el mas guapo:</p>
-        
-			<label>	<input type="radio" name="pregunta30" ng-model="user.pregu30" value="guemez"> guemez  </label><br/>
-			<label> <input type="radio" name="pregunta30" ng-model="user.pregu30" value="luis"> luis  </label><br/>
-			<label> <input type="radio" name="pregunta30" ng-model="user.pregu30" value="maik"> Maik  </label><br/>
-			
-							</div><!--final pregunta 30-->
                             </div><!--Final tabla final-->
                         </div>
                         <div class="wizard-footer">
@@ -358,11 +936,7 @@
                 </form>
             </div> <!-- wizard container -->
         </div>
-		<div class="col-md-2 col-xs-2 "><!--sexta  col de 3 donde va el logo derecho-->
-					
-					<img class="preguntas-logo-derecho" src="img/logo-opciones.png"></img>
-					
-					</div>
+		
 		
 		
 					

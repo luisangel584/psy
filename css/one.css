@@ -292,42 +292,6 @@ h4{
     border-radius: 5px 5px; 
     text-shadow: #2C3E50 1px 1px 5px;
 }
-/*cuestionario*/
-.preguntas1body{
- background: url('../img/stones3.jpg') no-repeat;
-    
-	}
-
-
-.cuestionario{
-position:relative;
-top:5em;
-
-
-padding-top: 30px;
-background: rgba(255, 255, 255, 0.9);
-
-}
-
-.preguntas-logo-izquierdo{
-width:162px;
-height:85px;
-
-}
-.preguntas-cuestionario{
-
-background: rgba(255, 255, 255, 0.6);
-
-}
-
-.preguntas-logo-derecho{
-margin-left:-22px;
-width:162px;
-height:85px;
-
-
-}
-
 /*            Navigation menu                */
 .nav-pills > li + li {
     margin-left: 0;
@@ -348,6 +312,18 @@ label{
 }
 
 
+.wizard-container{
+   
+    padding-top: 100px;
+    z-index: 3;
+}
+.wizard-card{
+    min-height: 410px;
+    
+    padding: 10px 0;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+}
 
 .wizard-card .tab-content{
     min-height: 340px;
@@ -375,14 +351,120 @@ label{
     color: #FFFFFF !important;
     font-size: 12px;
 }
+
+
+
+
+/*            ghnjk                */
+
+/*cuestionario*/
+body{
+ background: url('../img/stones3.jpg') no-repeat;
+    
+	}
+
+
+.cuestionario{
+position:relative;
+top:2em;
+box-shadow: 0 0 15px rgba(0, 0, 0, 0.15), 0 0 1px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+
+
+background: rgba(255, 255, 255, 0.9);
+
+}
+
+.preguntas-logo-izquierdo{
+width:162px;
+height:85px;
+
+}
+.preguntas-cuestionario{
+
+background: rgba(255, 255, 255, 0.6);
+
+}
+
+.preguntas-logo-derecho{
+margin-left:-22px;
+width:162px;
+height:85px;
+
+
+}
 .preguntas{
 
 text-align:center;
 
 }
-
 .cuestionario{
 
 margin-left: 79px;
+
+}
+
+.reserve3{
+text-shadow: 1px 1px #000000;
+color:GoldenRod ;
+position:relative;
+bottom:-3em;
+	padding-top: -80px;
+	text-align: center;
+
+}
+
+.preguntas1{
+
+margin-left:182px;
+margin-top:22px;
+
+}
+
+.radioizquierdo{
+margin-left:92px;
+
+
+}
+.radioderecho{
+margin-left:-74px;
+
+
+}
+.radioderecho2{
+margin-left:-74px;
+margin-bottom:22px;
+
+
+}
+
+.lineadiv{
+
+border: solid 1px black;
+width:599px;
+
+}
+
+.label1{
+
+margin-bottom:-22px;
+
+}
+
+.label2{
+margin-bottom:-82px;
+
+
+}
+
+.titumaspregu{
+
+color:black;
+
+}
+
+.titumenospregu{
+
+color:black;
 
 }
